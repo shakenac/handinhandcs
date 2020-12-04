@@ -1,2 +1,59 @@
 @import "reset.css";
 @import "fonts.css";
+
+/* Color pallete ---------------------------------- */
+:root {
+   /*text*/
+   --main-txt: #3c3c3c;
+   --cream-txt: #f8f7f2;
+   --nav-active: #bab48f;
+   --footer-text: #d8d48e;
+
+   /*backgrounds*/
+   --blue-bg: #257282;
+   --cream-bg: #f8f7f2;
+   --black-bg: #3c3c3c;
+   --orange-bg: #d99a45;
+
+   /*form*/
+   --form-placeholder-txt: #3f91a2;
+   --form-input-bg: #185663;
+}
+
+/* General ---------------------------------------- */
+.container {
+
+}
+.flex {
+
+}
+
+/* grids */
+
+/*text styles*/
+h1,
+h2,
+h3,
+h4 {
+
+}
+h1 {
+   font-size: 43px;
+}
+h2 {
+   font-size: px;
+}
+h3 {
+   font-size: px;
+}
+h4 {
+   font-size: px;
+}
+p {
+   font-size: px;
+}
+
+
+
+/* Home Page --------------------------------------*/
+/* HEADER */
