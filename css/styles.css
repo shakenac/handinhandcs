@@ -40,6 +40,7 @@
    max-width: 860px;
    text-align: center;
    margin: 0 auto;
+   padding: 0 30px;
 }
 
 /* Grids */
@@ -203,59 +204,66 @@ p {
    /* height: 100vh; */
    height: 650px;
 }
-/* .container {
-   max-width: 1100px;
-   margin: 0 auto;
-   overflow: hidden;
-
-} */
-#mission .gallery {
-   position: relative;
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
-   box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
-   border-radius: 5px;
-   padding: 0;
-   margin: 100px auto 0;
-
-}
-#mission .btw-img:nth-child(1) {
-   border-top-left-radius: 5px;
-}
-#mission .btw-img:nth-child(2) {
-   border-top-right-radius: 5px;
-}
-#mission .btw-img:nth-child(3) {
-   border-bottom-left-radius: 5px;
-}
-#mission .btw-img:nth-child(4) {
-   border-bottom-right-radius: 5px;
-}
-#mission .gallery .btw-img {
-   position: relative;
-   height: 100%;
-   width: 100%;
-   overflow: hidden;
-}
-#mission .gallery .btw-img img {
-   position: relative;
-   height: 100%;
-   width: 100%;
-   overflow: hidden;
-}
-
 
 
 
 /* Request Section */
 #request {
    background-color: var(--blue-bg);
-   height: 700px;
+   /* height: 700px; */
 }
 #request .inner {
-   /* padding-top: 400px; */
    position: relative;
-   /* top: 400px; */
    color: var(--cream-txt);
+   bottom: 160px;
+}
+
+#request .gallery {
+   position: relative;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   /* -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
+   box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1); */
+   border-radius: 5px;
+   padding: 0;
+   /* margin: 100px auto 0; */
+   bottom: 250px;
+}
+#request .btw-img:nth-child(1) {
+   border-top-left-radius: 5px;
+}
+#request .btw-img:nth-child(2) {
+   border-top-right-radius: 5px;
+}
+#request .btw-img:nth-child(3) {
+   border-bottom-left-radius: 5px;
+}
+#request .btw-img:nth-child(4) {
+   border-bottom-right-radius: 5px;
+}
+#request .gallery .btw-img {
+   position: relative;
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+}
+#request .gallery .btw-img img {
+   position: relative;
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+}
+#request .request-btn {
+   text-align: center;
+   position: relative;
+   bottom: 100px;
+}
+
+
+/* Services Section */
+#services-home .inner {
+   text-align: center;
+}
+#services-home .inner h2 {
+   font-family: 'Segoe Script', sans-serif;
 }
