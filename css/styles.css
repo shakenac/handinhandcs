@@ -44,9 +44,11 @@
 }
 
 /* Grids */
-
-
-
+.grid-4 {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-column-gap: 20px;
+}
 
 /* Text styles */
 a,
@@ -86,6 +88,7 @@ p {
    font-family: 'Fira Sans', sans-serif;
    font-size: 15px;
    line-height: 1.3em;
+   color: var(--main-txt);
 }
 
 /* Buttons */
@@ -214,7 +217,8 @@ text-shadow: 0 0 .65px var(--main-txt), 0 0 .65px var(--main-txt);
    padding: 20px;
    z-index: 5;
 }
-#banner h1, p {
+#banner h1,
+#banner p {
    color: var(--cream-txt);
 }
 #banner p {
@@ -289,9 +293,23 @@ text-shadow: 0 0 .65px var(--main-txt), 0 0 .65px var(--main-txt);
 
 
 /* Services Section */
-#services-home .inner {
+#services-home {
    text-align: center;
 }
-#services-home .inner h2 {
+#services-home h2 {
    font-family: 'Segoe Script', sans-serif;
+}
+#services-home .services-imgs .service-col {
+   overflow: hidden;
+}
+#services-home .services-imgs .img {
+   /* position: relative; */
+   width: 100%;
+   /* height: 100%; */
+   overflow: hidden;
+}
+
+#services-home .services-imgs .img img {
+   width: 100%
+   overflow: hidden;
 }
