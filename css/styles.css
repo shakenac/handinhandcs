@@ -65,7 +65,7 @@ a {
 
 h1 {
    font-size: 48px;
-   font-weight: 100;
+   font-weight: 300;
    line-height: 1.2em;
    color: var(--main-txt);
    margin-bottom: 20px;
@@ -92,9 +92,18 @@ p {
 .btn-white {
    text-align: center;
    text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing: .09em;
    color: var(--cream-txt);
    border: 2px solid var(--cream-txt);
    padding: 10px;
+   border-radius: 2px;
+}
+.btn-white:hover {
+   background-color: var(--form-input-bg);
+   color: var(--cream-txt);
+   border: 2px solid var(--form-input-bg);
+   transition: background .2s ease-in-out;
 }
 
 
@@ -137,20 +146,39 @@ p {
    text-transform: uppercase;
    color: var(--cream-txt);
 }
+#header nav a:hover {
+   text-shadow: 0 0 .65px var(--nav-active), 0 0 .65px var(--nav-active);
+   color: var(--nav-active);
+}
 #header .nav-btn {
    border: 2px solid var(--cream-txt);
    border-radius: 2px;
+   color: var(--cream-txt);
    padding: 7px 9px;
    margin-left: 12px;
    text-transform: uppercase;
+   letter-spacing: .09em;
 }
-#header .nav-btn a {
+#header .nav-btn:hover {
+background-color: var(--nav-active);
+border: 2px solid var(--nav-active);
+transition: .2s ease-in-out;
+color: var(--main-txt);
+text-shadow: 0 0 .65px var(--main-txt), 0 0 .65px var(--main-txt);
+
+}
+/* #header .nav-btn {
    color: var(--cream-txt);
 }
+#header .nav-btn:hover {
+   color: var(--main-txt);
+   transition: .2s ease-in-out;
+} */
 
 #nav .current {
-   font-weight: 800;
+   /* font-weight: 800; */
    color: var(--nav-active);
+   text-shadow: 0 0 .65px var(--nav-active), 0 0 .65px var(--nav-active);
 }
 
 
