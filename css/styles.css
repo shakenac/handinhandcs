@@ -451,6 +451,18 @@ text-shadow: 0 0 .65px var(--main-txt), 0 0 .65px var(--main-txt);
    font-weight: 500;
 }
 
+/*contact image*/
+.contact .inner .contact-img {
+   /* position: relati */
+   max-height: 300px;
+}
+.contact .inner .contact-img img {
+   width: 100%;
+   /* position: relative; */
+   /* bottom: 300px; */
+}
+
+
 /*message form*/
 .contact .message-form.container {
    padding-top: 30px;
