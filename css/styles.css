@@ -16,8 +16,9 @@
    --orange-bg: #d99a45;
 
    /*form*/
-   --form-placeholder-txt: #3f91a2;
+   --form-placeholder-txt: #307786;
    --form-input-bg: #185663;
+   /* --form-placeholder-txt: #3f91a2; */
 }
 
 * {
@@ -363,7 +364,7 @@ text-shadow: 0 0 .65px var(--main-txt), 0 0 .65px var(--main-txt);
 
 #testimonials {
    background-color: var(--orange-bg);
-   padding: 100px 20px 50px 20px;
+   padding: 100px 20px 100px 20px;
    text-align: center;
    color: var(--cream-txt);
 }
@@ -420,14 +421,36 @@ text-shadow: 0 0 .65px var(--main-txt), 0 0 .65px var(--main-txt);
 
 
 /* Message Form ------------------------------------*/
+.contact {
+   background-color: var(--blue-bg);
+   font-weight: 300;
+   /* padding-top: 50px; */
+}
 .contact .inner {
    text-align: center;
+   color: var(--cream-txt);
 }
 .contact .contact-info {
    display: grid;
    grid-template-columns: repeat(2, 6fr);
    grid-column-gap: 20px;
+   color: var(--cream-txt);
 }
+.contact .inner h2 {
+   font-family: 'Segoe Script', sans-serif;
+}
+.contact .contact-info p {
+   color: var(--cream-txt);
+}
+.contact .contact-info .num-email p {
+   margin-bottom: 5px;
+   font-weight: 400;
+}
+.contact .contact-info .note  .contact-p {
+   margin-top: 7px;
+   font-weight: 500;
+}
+
 /*message form*/
 .contact .message-form.container {
    padding-top: 30px;
@@ -437,14 +460,43 @@ text-shadow: 0 0 .65px var(--main-txt), 0 0 .65px var(--main-txt);
    grid-template-columns: repeat(2, 1fr);
    grid-gap: 15px 20px;
 }
-.contact .message-form form .contact-message {
+
+.contact .message-form form .form-control input, textarea {
+   border-radius: 3px;
+   border: none;
+}
+
+.contact .message-form form .contact-message,
+textarea {
    grid-column: 1 / span 2;
 }
-.contact .message-form form .form-control input {
+.contact .message-form form .form-control input,
+textarea {
    width: 100%;
-   padding: 10px;
+   padding: 17px;
+   background-color: var(--form-input-bg);
 }
+
 .contact .message-form form .submit {
    grid-column: 1 / span 2;
-   justify-content: center;
+   /* justify-content: center; */
+   text-align: center;
+}
+
+.contact .message-form form ::placeholder {
+   font-family: 'Fira Sans', sans-serif;
+   color: var(--form-placeholder-txt);
+   letter-spacing: .03em;
+}
+
+.contact .message-form form .submit .btn {
+   background: none;
+   color: var(--form-input-bg);
+   border: 2px solid var(--form-input-bg);
+   padding: 10px 25px;
+}
+.contact .message-form form .submit .btn:hover {
+   background: var(--form-input-bg);
+   color: var(--cream-txt);
+   border: 2px solid var(--form-input-bg);
 }
