@@ -179,10 +179,10 @@ p {
    letter-spacing: .09em;
 }
 #header .nav-btn:hover {
-background-color: var(--nav-active);
-border: 2px solid var(--nav-active);
+background-color: var(--main-txt);
+border: 2px solid var(--main-txt);
 transition: .2s ease-in-out;
-color: var(--main-txt);
+color: var(--nav-active);
 text-shadow: 0 0 .65px var(--main-txt), 0 0 .65px var(--main-txt);
 
 }
@@ -385,13 +385,13 @@ text-shadow: 0 0 .65px var(--main-txt), 0 0 .65px var(--main-txt);
    grid-column-gap: 10px;
 }
 #testimonials .inner.container {
-   padding-top: 50px;
+   padding-top: 15px;
 }
 
 #testimonials .inner .left-arrow {
    text-align: left;
    font-weight: 100;
-   font-size:
+   /* font-size: */
 }
 #testimonials .inner .right-arrow {
    text-align: right;
@@ -417,3 +417,34 @@ text-shadow: 0 0 .65px var(--main-txt), 0 0 .65px var(--main-txt);
 #testimonials .inner .right-quote {
    left: 10px;
 } */
+
+
+/* Message Form ------------------------------------*/
+.contact .inner {
+   text-align: center;
+}
+.contact .contact-info {
+   display: grid;
+   grid-template-columns: repeat(2, 6fr);
+   grid-column-gap: 20px;
+}
+/*message form*/
+.contact .message-form.container {
+   padding-top: 30px;
+}
+.contact .message-form form {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 15px 20px;
+}
+.contact .message-form form .contact-message {
+   grid-column: 1 / span 2;
+}
+.contact .message-form form .form-control input {
+   width: 100%;
+   padding: 10px;
+}
+.contact .message-form form .submit {
+   grid-column: 1 / span 2;
+   justify-content: center;
+}
