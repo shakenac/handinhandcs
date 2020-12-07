@@ -92,6 +92,22 @@ p {
 }
 
 /* Buttons */
+.btn {
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing: .09em;
+   color: var(--black-bg);
+   border: 2px solid var(--black-bg);
+   padding: 10px;
+   border-radius: 2px;
+}
+.btn:hover {
+   background-color: var(--nav-active);
+   color: var(--cream-txt);
+   border: 2px solid var(--nav-active);
+   transition: background .2s ease-in-out;
+}
 .btn-white {
    text-align: center;
    text-transform: uppercase;
@@ -291,25 +307,56 @@ text-shadow: 0 0 .65px var(--main-txt), 0 0 .65px var(--main-txt);
    bottom: 100px;
 }
 
-
 /* Services Section */
 #services-home {
+   padding-bottom: 100px;
+   background-color: var(--cream-bg);
+}
+#services-home .inner {
    text-align: center;
+}
+#services-home .cols .service-offered {
+   display: flex;
+   align-items: baseline;
+   justify-content: center;
+   text-align: center;
+}
+#services-home .cols {
+   display: grid;
+   grid-template-columns: repeat(4, minmax(200px, 1fr));
+   grid-column-gap: 20px;
+
+}
+#services-home .cols .col-4 .col-img  {
+   width: 100%;
+   overflow: hidden;
+   border-radius: 3px;
+}
+#services-home .cols .col-4 .col-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 #services-home h2 {
    font-family: 'Segoe Script', sans-serif;
 }
-#services-home .services-imgs .service-col {
-   overflow: hidden;
+#services-home p {
+   font-weight: 500;
+   margin-top: 10px;
 }
-#services-home .services-imgs .img {
+#services-home .cols.container {
+   padding-top: 50px;
+}
+#services-home .service-offered i {
    /* position: relative; */
-   width: 100%;
-   /* height: 100%; */
-   overflow: hidden;
+   padding-right: 6px;
+   font-size: 15px;
+   /* top: 1px; */
+}
+#services-home .request-btn {
+   margin-top: 60px;
+   text-align: center;
 }
 
-#services-home .services-imgs .img img {
-   width: 100%
-   overflow: hidden;
-}
+
+/* Testimonials Section */
