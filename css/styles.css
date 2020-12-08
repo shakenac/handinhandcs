@@ -123,9 +123,9 @@ p {
    border-radius: 2px;
 }
 .btn-white:hover {
-   background-color: var(--form-input-bg);
+   background-color: var(--black-bg);
    color: var(--cream-txt);
-   border: 2px solid var(--form-input-bg);
+   border: 2px solid var(--black-bg);
    transition: background .2s ease-in-out;
 }
 
@@ -384,12 +384,14 @@ text-shadow: 0 0 .65px var(--main-txt), 0 0 .65px var(--main-txt);
 }
 #testimonials .inner {
    display: grid;
-   grid-template-columns: 2fr 1fr 5fr 1fr 2fr;
+   grid-template-columns: repeat(3, 1fr);
    align-items: center;
    grid-column-gap: 10px;
+   grid-gap: 25px 10px;
 }
 #testimonials .inner.container {
    padding-top: 15px;
+   padding-bottom: 50px;
 }
 
 #testimonials .inner .left-arrow {
@@ -414,13 +416,20 @@ text-shadow: 0 0 .65px var(--main-txt), 0 0 .65px var(--main-txt);
    align-self: start;
    position: relative;
    top: -5px;
+   color: #a56815;
 }
-/* #testimonials .inner .left-quote {
-   right: 10px;
+#testimonials .inner .left-quote h1,
+.right-quote h1 {
+   color: #a56815;
+   font-style: italic;
 }
-#testimonials .inner .right-quote {
-   left: 10px;
-} */
+#testimonals .inner .client-name {
+   grid-column: 4 / 3;
+   text-align: center;
+}
+#testimonials .inner .client-name p {
+   color: #a56815;
+}
 
 /*testimonials image*/
 #testimonials .contact-img {
