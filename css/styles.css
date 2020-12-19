@@ -26,7 +26,6 @@
    padding: 0;
    margin: 0;
 }
-
 .container {
    max-width: 1200px;
    margin: 0 auto;
@@ -35,6 +34,15 @@
 .flex {
    display: flex;
    align-items: center;
+}
+
+/* Banner  -----------------------------------*/
+.banner {
+   background-image: url(../images/simon-follin-wFji3OS5us0-unsplash.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 400px;
 }
 
 
