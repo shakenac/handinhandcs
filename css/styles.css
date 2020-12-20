@@ -39,6 +39,11 @@
    align-items: center;
    height: 100%;
 }
+.grid-3 {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-column-gap: 20px;
+}
 .inner {
    max-width: 600px;
    margin: 0 auto;
@@ -145,6 +150,10 @@ header .flex {
 .open-statement {
    background-color: var(--orange-bg);
    color: var(--cream-bg);
+}
+.open-statement img {
+   width: 100%;
+   height: 100%;
 }
 
 
