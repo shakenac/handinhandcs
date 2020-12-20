@@ -30,10 +30,44 @@
    max-width: 1200px;
    margin: 0 auto;
    overflow: hidden;
+   padding: 0 40px;
 }
 .flex {
    display: flex;
+   /* justify-content: center; */
    align-items: center;
+   height: 100%;
+}
+
+a {
+   font-family: 'Fira Sans', sans-serif;
+   font-size: 14px;
+   color: #3c3c3c;
+   letter-spacing: .01em;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+.current {
+   font-weight: 700;
+}
+
+h1 {
+   font-family: 'Segoe Script', sans-serif;
+   color: var(--cream-txt);
+   line-height: 1.5em;
+   font-size: 20px;
+}
+
+/* Header  -----------------------------------*/
+header .flex {
+   justify-content: space-between;
+}
+.navbar {
+   display: flex;
+   justify-content: flex-end;
+}
+.logo img {
+   width: 250px;
 }
 
 /* Banner  -----------------------------------*/
@@ -44,6 +78,10 @@
    background-position: center;
    height: 400px;
 }
+.banner .banner-inner {
+   max-width: 325px;
+}
+
 
 
 /* Media Queries -----------------------------------*/
