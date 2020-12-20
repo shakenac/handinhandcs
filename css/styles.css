@@ -14,7 +14,7 @@
    --cream-bg: #f8f7f2;
    --black-bg: #3c3c3c;
    --orange-bg: #d99a45;
-   --banner-overlay: #406573;
+   --banner-overlay: #285058;
 
    /*form*/
    --form-placeholder-txt: #307786;
@@ -39,11 +39,17 @@
    align-items: center;
    height: 100%;
 }
+.inner {
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 120px 40px;
+   text-align: center;
+}
 
 a {
    font-family: 'Fira Sans', sans-serif;
    font-size: 14px;
-   font-weight: 500;
+   font-weight: 00;
    color: #3c3c3c;
    letter-spacing: .03em;
    text-decoration: none;
@@ -59,6 +65,12 @@ h1 {
    color: var(--cream-txt);
    line-height: 1.5em;
    font-size: 24px;
+}
+h4 {
+   font-family: 'Fira Sans', sans-serif;
+   font-size: 20px;
+   font-weight: 300;
+   line-height: 1.5em;
 }
 
 /* Header  -----------------------------------*/
@@ -128,6 +140,13 @@ header .flex {
    margin-top: 30px;
    display: none;
 }
+
+/* Open Statement  -----------------------------------*/
+.open-statement {
+   background-color: var(--orange-bg);
+   color: var(--cream-bg);
+}
+
 
 
 /* Media Queries -----------------------------------*/
