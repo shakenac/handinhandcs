@@ -14,6 +14,7 @@
    --cream-bg: #f8f7f2;
    --black-bg: #3c3c3c;
    --orange-bg: #d99a45;
+   --banner-overlay: #406573;
 
    /*form*/
    --form-placeholder-txt: #307786;
@@ -57,7 +58,7 @@ h1 {
    font-family: 'Segoe Script', sans-serif;
    color: var(--cream-txt);
    line-height: 1.5em;
-   font-size: 20px;
+   font-size: 24px;
 }
 
 /* Header  -----------------------------------*/
@@ -78,14 +79,22 @@ header .flex {
 .navbar nav li {
    padding-right: 20px;
 }
-.navbar .nav-btn {
-   padding: 10px;
-   border: 2px solid var(--main-txt);
-   border-radius: 2px;
+.navbar nav a:hover {
+   font-weight: 700;
+   color: var(--blue-bg);
+   transition: background .2s ease-in-out;
 }
 .navbar .nav-btn a {
-   font-weight: 700;
+   padding: 10px 20px;
+   border: 2px solid var(--main-txt);
+   border-radius: 3px;
 }
+.navbar .nav-btn a:hover {
+   background-color: var(--black-bg);
+   color: var(--cream-txt);
+   transition: background .2s ease-in-out;
+}
+
 
 /* Banner  -----------------------------------*/
 .banner {
@@ -93,27 +102,31 @@ header .flex {
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
-   height: 400px;
+   height: 450px;
 }
 .banner::before {
    content:'';
-   background-color: var(--black-bg);
-   height: 400px;
+   background-color: var(--banner-overlay);
+   height: 450px;
    width: 100%;
    position: absolute;
    left: 0;
-   opacity: 0.8;
+   opacity: 0.6;
    z-index: 1;
 }
 .banner .banner-inner {
-   max-width: 325px;
+   max-width: 375px;
    z-index: 5;
+}
+.banner .banner-inner .indent {
+   padding-left: 20px;
 }
 
 
-
 /* Media Queries -----------------------------------*/
+@media screen and (max-width: 1000px) {
 
+}
 @media screen and (max-width: 500px) {
 
 }
