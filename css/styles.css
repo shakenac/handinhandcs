@@ -42,13 +42,15 @@
 a {
    font-family: 'Fira Sans', sans-serif;
    font-size: 14px;
+   font-weight: 500;
    color: #3c3c3c;
-   letter-spacing: .01em;
+   letter-spacing: .03em;
    text-decoration: none;
    text-transform: uppercase;
 }
 .current {
    font-weight: 700;
+   color: var(--blue-bg);
 }
 
 h1 {
@@ -59,15 +61,30 @@ h1 {
 }
 
 /* Header  -----------------------------------*/
+header {
+   background-color: #fff;
+   /* z-index: 5; */
+}
 header .flex {
    justify-content: space-between;
 }
-.navbar {
-   display: flex;
-   justify-content: flex-end;
-}
 .logo img {
    width: 250px;
+}
+.navbar nav ul {
+   display: flex;
+   justify-content: space-between;
+}
+.navbar nav li {
+   padding-right: 20px;
+}
+.navbar .nav-btn {
+   padding: 10px;
+   border: 2px solid var(--main-txt);
+   border-radius: 2px;
+}
+.navbar .nav-btn a {
+   font-weight: 700;
 }
 
 /* Banner  -----------------------------------*/
@@ -78,8 +95,19 @@ header .flex {
    background-position: center;
    height: 400px;
 }
+.banner::before {
+   content:'';
+   background-color: var(--black-bg);
+   height: 400px;
+   width: 100%;
+   position: absolute;
+   left: 0;
+   opacity: 0.8;
+   z-index: 1;
+}
 .banner .banner-inner {
    max-width: 325px;
+   z-index: 5;
 }
 
 
