@@ -329,12 +329,47 @@ header .flex {
       margin-top: -500px;
       padding-top: 500px;
    }
+
+   /* Offers Image Thumbnails */
+   .offers .services-home {
+      grid-template-columns: 1fr;
+      grid-row-gap: 20px;
+   }
+   .offers .services-home .column {
+      margin-bottom: 15px;
+   }
+   .offers .services-home .column .thumbnails {
+      height: 300px;
+      overflow: hidden;
+      border-radius: 3px;
+   }
+   /* .offers .services-home .column .thumbnails img {
+      height: 100%;
+   } */
+   .offers .services-home .column-2 .thumbnails img {
+      position: relative;
+      bottom: 70px;
+   }
+   .offers .services-home .column-3 .thumbnails img {
+      position: relative;
+      bottom: 60px;
+   }
 }
 
 @media screen and (max-width: 550px) {
    /* Home images */
-   .home-images .img-1 img {
+   .home-images .imgs {
+      height: 200px;
+      overflow: hidden;
+   }
+   /* .home-images .img-1 img {
       height: 100%;
-      width:auto;
+      width: auto;
+   } */
+   /* Offers images */
+   .offers .services-home .column .thumbnails {
+      height: 200px;
+      /* overflow: hidden;
+      border-radius: 3px; */
    }
 }
