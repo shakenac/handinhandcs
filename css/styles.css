@@ -60,6 +60,7 @@ a {
    letter-spacing: .03em;
    text-decoration: none;
    text-transform: uppercase;
+   transition: .2s ease-in-out;
 }
 .current {
    font-weight: 700;
@@ -79,7 +80,7 @@ h2 {
 }
 h3 {
    font-family: 'Fira Sans', sans-serif;
-   font-size: 16px;
+   font-size: 15px;
    font-weight: 700;
    letter-spacing: .15em;
    text-transform: uppercase;
@@ -89,6 +90,11 @@ h4 {
    font-family: 'Fira Sans', sans-serif;
    font-size: 22px;
    font-weight: 300;
+   line-height: 1.5em;
+}
+p {
+   font-family: 'Fira Sans', sans-serif;
+   font-size: 15px;
    line-height: 1.5em;
 }
 
@@ -210,9 +216,22 @@ header .flex {
 }
 .offers .title h2 {
    color: var(--cream-txt);
-
+}
+.offers p {
+   text-align: center;
+   color: var(--cream-txt);
 }
 
+/*thumbnails*/
+
+
+/* .offers .services-home .columns .thumnails {
+   overflow: hidden;
+}
+.offers .services-home .columns .thumnails img {
+   width: 100%;
+   height: 100%;
+} */
 
 
 /* Media Queries -----------------------------------*/
