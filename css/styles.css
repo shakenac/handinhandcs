@@ -217,21 +217,24 @@ header .flex {
 .offers .title h2 {
    color: var(--cream-txt);
 }
+
+/*thumbnails*/
+.offers .services-home {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-column-gap: 20px;
+   margin-top: 40px;
+}
+.offers .services-home .thumbnails img {
+   width: 100%;
+   border-radius: 3px;
+}
 .offers p {
    text-align: center;
    color: var(--cream-txt);
+   margin-top: 15px;
 }
 
-/*thumbnails*/
-
-
-/* .offers .services-home .columns .thumnails {
-   overflow: hidden;
-}
-.offers .services-home .columns .thumnails img {
-   width: 100%;
-   height: 100%;
-} */
 
 
 /* Media Queries -----------------------------------*/
