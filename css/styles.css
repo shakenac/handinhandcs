@@ -75,7 +75,7 @@ h1 {
 }
 h2 {
    font-family: 'Fira Sans', sans-serif;
-   font-size: 26px;
+   font-size: 30px;
    font-weight: 300;
 }
 h3 {
@@ -222,6 +222,9 @@ header .flex {
 .offers .title h2 {
    color: var(--cream-txt);
 }
+.offers p {
+   font-size: 16px;
+}
 
 /*thumbnails*/
 .offers .services-home {
@@ -315,7 +318,7 @@ header .flex {
       grid-row-gap: 20px;
    }
    .home-images .imgs {
-      height: 300px;
+      max-height: 300px;
       overflow: hidden;
    }
    .home-images img {
@@ -359,7 +362,7 @@ header .flex {
 @media screen and (max-width: 550px) {
    /* Home images */
    .home-images .imgs {
-      height: 200px;
+      max-height: 200px;
       overflow: hidden;
    }
    /* .home-images .img-1 img {
