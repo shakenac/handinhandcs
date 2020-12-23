@@ -310,6 +310,22 @@ header .flex {
    }
 }
 
+@media screen and (max-width: 975px) {
+   /* opening statement */
+   .open-statement {
+      height: 875px;
+   }
+   /* Home Images */
+   .image-gallery {
+      margin-top: -515px;
+   }
+   /* Mission */
+   .mission {
+      margin-top: -100px;
+      padding-top: 100px;
+   }
+}
+
 /* Tablet */
 @media screen and (max-width: 768px) {
 
@@ -317,7 +333,6 @@ header .flex {
    .open-statement {
       height: 830px;
    }
-
    /* Home Images */
    .image-gallery {
       margin-top: -470px;
@@ -330,13 +345,11 @@ header .flex {
       overflow: hidden;
       border-radius: 3px;
    }
-
    /* Mission */
    .mission {
       margin-top: -470px;
       padding-top: 470px;
    }
-
    /* Offers Image Thumbnails */
    .offers .services-home {
       grid-template-columns: 1fr;
