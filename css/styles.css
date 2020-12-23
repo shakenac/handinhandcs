@@ -251,6 +251,7 @@ header .flex {
    width: 100%;
    border-radius: 3px;
 }
+
 .offers p {
    text-align: center;
    color: var(--cream-txt);
@@ -398,5 +399,8 @@ header .flex {
    /* Offers images */
    .offers .services-home .column .thumbnails {
       height: 200px;
+   }
+   .offers .btn {
+      margin-top: 40px;
    }
 }
