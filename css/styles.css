@@ -310,7 +310,7 @@ header .flex {
    font-weight: 300;
 }
 .approach-specialties ul li {
-   margin-bottom: 15px;
+   margin-bottom: 10px;
    line-height: 1.4em;
 }
 .approach-specialties .btn-approach {
@@ -326,7 +326,17 @@ header .flex {
    grid-template-columns: repeat(2, 1fr);
    grid-column-gap: 20px;
 }
-
+.approach-specialties .specialties .lists ul .list-item {
+   display: flex;
+   margin-bottom: 6px;
+}
+.approach-specialties .specialties .lists ul .list-item i {
+   display: flex;
+   margin-right: 5px;
+   font-size: 10px;
+   position: relative;
+   top: 6px;
+}
 
 
 /* Media Queries -----------------------------------*/
