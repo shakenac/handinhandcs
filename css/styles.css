@@ -465,7 +465,7 @@ header .flex {
 .contact .contents form {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   grid-gap: 10px 20px;
+   grid-gap: 20px 20px;
 }
 
 .contact .contents form .form-control input {
@@ -474,21 +474,27 @@ header .flex {
    border-radius: 3px;
    border: none;
    background-color: var(--form-input-bg);
+   color: var(--cream-txt);
+   font-size: 16px;
 }
 .contact .contents form .contact-message textarea {
    width: 100%;
    border: none;
+   font-family: 'Fira Sans', sans-serif;
+   font-size: 16px;
    background-color: var(--form-input-bg);
+   color: var(--cream-txt);
 }
 .contact .contents form .contact-message {
    grid-column: 1 / span 2;
 }
 .contact .contents form ::placeholder {
-   color: var(--form-placeholder-txt);
    font-family: 'Fira Sans', sans-serif;
+   color: var(--form-placeholder-txt);
 }
 .contact .contents form .contact-message textarea {
    padding: 15px;
+   border-radius: 3px;
 }
 .contact .contents form .submit {
    grid-column: 1 / span 2;
