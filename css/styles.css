@@ -9,6 +9,7 @@
    --nav-active: #bab48f;
    --footer-text: #d8d48e;
    --blue-bg-text: #d8d4be;
+   --orange-bg-text: #e7dbc0;
    --blue-text: #257282;
 
    /*backgrounds*/
@@ -207,7 +208,8 @@ header .flex {
 /* Open Statement  -----------------------------------*/
 .open-statement {
    background-color: var(--orange-bg);
-   color: var(--cream-bg);
+   /* color: var(--cream-bg); */
+   color: var(--orange-bg-text);
    height: 500px;
 }
 
@@ -356,10 +358,44 @@ header .flex {
 
 
 /* Testimonials  -----------------------------------*/
-
-
-
-
+.testimonials {
+   padding: 100px 0;
+   background-color: var(--orange-bg);
+   color: var(--orange-bg-text);
+}
+.testimonials .contents h3 {
+   text-align: center;
+   color: var(--cream-txt);
+}
+.testimonials .contents .testimonial {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-column-gap: 20px;
+}
+.testimonials .contents .testimonial .quotation h2 {
+   font-size: 60px;
+   font-style: italic;
+   color: #B9843C;
+}
+.testimonials .contents .testimonial .quotation-left {
+   grid-column: 1 / span 3;
+   text-align: right;
+}
+.testimonials .contents .testimonial .quotation-right {
+   grid-column: 10 / span 3;
+   text-align: left;
+}
+.testimonials .contents .testimonial .quote {
+   grid-column: 4 / span 6;
+   text-align: center;
+   font-style: italic;
+}
+.testimonials p {
+   text-align: center;
+   margin-top: 50px;
+   color: var(--orange-bg-text);
+   font-size: 17px;
+}
 
 /* Media Queries -----------------------------------*/
 @media screen and (max-width: 1024px) {
@@ -478,7 +514,6 @@ header .flex {
    .approach-specialties .contents .specialties .lists {
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
    }
-
 }
 
 /* Mobile */
