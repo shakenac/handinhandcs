@@ -351,6 +351,9 @@ header .flex {
    position: relative;
    top: 7px;
 }
+.approach-specialties .specialties .lists ul .list-item p {
+   line-height: 1.3em;
+}
 
 
 /* Media Queries -----------------------------------*/
@@ -413,7 +416,6 @@ header .flex {
 
 /* Tablet */
 @media screen and (max-width: 768px) {
-
    /* opening statement */
    .open-statement {
       height: 830px;
@@ -448,9 +450,6 @@ header .flex {
       overflow: hidden;
       border-radius: 3px;
    }
-   /* .offers .services-home .column .thumbnails img {
-      height: 100%;
-   } */
    .offers .services-home .column-2 .thumbnails img {
       position: relative;
       bottom: 70px;
@@ -459,6 +458,18 @@ header .flex {
       position: relative;
       bottom: 60px;
    }
+   /* Approach-Specialties */
+   .approach-specialties .content {
+      grid-template-columns: 1fr;
+      grid-row-gap: 70px;
+   }
+   .approach-specialties .content .approach {
+      max-width: 100%;
+   }
+   .approach-specialties .content .specialties .lists {
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+   }
+
 }
 
 /* Mobile */
