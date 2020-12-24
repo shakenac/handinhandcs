@@ -400,12 +400,24 @@ header .flex {
 
 
 /* Contact Image  -----------------------------------*/
-.contact {
+.contact-image {
    margin-top: -250px;
 }
 .contact-image img {
    width: 100%;
+   border-radius: 4px;
+   box-shadow: var(--shadow);
 }
+
+
+/* Contact Section  -----------------------------------*/
+
+.contact {
+   background-color: var(--blue-bg);
+   padding-top: 380px;
+   margin-top: -300px;
+}
+
 
 
 
