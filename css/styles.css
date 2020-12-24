@@ -397,6 +397,15 @@ header .flex {
    font-size: 17px;
 }
 
+
+/* Contact Image  -----------------------------------*/
+.contact-image img {
+   width: 100%;
+}
+
+
+
+
 /* Media Queries -----------------------------------*/
 @media screen and (max-width: 1024px) {
    /* mobile menu */
