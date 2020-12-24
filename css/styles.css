@@ -122,8 +122,8 @@ p {
    letter-spacing: .1em;
 }
 .btn-blue:hover {
-   background-color: var(--main-txt);
-   border: 2px solid var(--main-txt);
+   background-color: var(--black-bg);
+   border: 2px solid var(--black-bg);
    color: var(--cream-txt);
    transition: background .2s ease-in-out;
 }
@@ -293,7 +293,7 @@ header .flex {
    color: var(--main-txt);
    padding: 100px 0 70px 0;
 }
-.approach-specialties .content {
+.approach-specialties .contents {
    display: grid;
    grid-template-columns: 1fr 1fr;
    /* grid-template-row: minmax(auto-fit, 300px); */
@@ -313,7 +313,6 @@ header .flex {
 .approach-specialties h4 {
    margin-bottom: 10px;
 }
-
 
 /* approach */
 .approach-specialties .approach {
@@ -349,11 +348,17 @@ header .flex {
    margin-right: 5px;
    font-size: 8px;
    position: relative;
-   top: 7px;
+   top: 5px;
 }
 .approach-specialties .specialties .lists ul .list-item p {
    line-height: 1.3em;
 }
+
+
+/* Testimonials  -----------------------------------*/
+
+
+
 
 
 /* Media Queries -----------------------------------*/
@@ -420,6 +425,7 @@ header .flex {
    .open-statement {
       height: 830px;
    }
+
    /* Home Images */
    .image-gallery {
       margin-top: -470px;
@@ -432,11 +438,13 @@ header .flex {
       overflow: hidden;
       border-radius: 3px;
    }
+
    /* Mission */
    .mission {
       margin-top: -470px;
       padding-top: 470px;
    }
+
    /* Offers Image Thumbnails */
    .offers .services-home {
       grid-template-columns: 1fr;
@@ -458,15 +466,16 @@ header .flex {
       position: relative;
       bottom: 60px;
    }
+
    /* Approach-Specialties */
-   .approach-specialties .content {
+   .approach-specialties .contents {
       grid-template-columns: 1fr;
       grid-row-gap: 70px;
    }
-   .approach-specialties .content .approach {
+   .approach-specialties .contents .approach {
       max-width: 100%;
    }
-   .approach-specialties .content .specialties .lists {
+   .approach-specialties .contents .specialties .lists {
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
    }
 
