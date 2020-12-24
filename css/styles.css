@@ -362,6 +362,7 @@ header .flex {
    padding: 100px 0;
    background-color: var(--orange-bg);
    color: var(--orange-bg-text);
+   height: 630px;
 }
 .testimonials .contents h3 {
    text-align: center;
@@ -399,6 +400,9 @@ header .flex {
 
 
 /* Contact Image  -----------------------------------*/
+.contact {
+   margin-top: -250px;
+}
 .contact-image img {
    width: 100%;
 }
