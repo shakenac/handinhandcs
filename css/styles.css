@@ -4,11 +4,12 @@
 /* Color pallete ---------------------------------- */
 :root {
    /*text*/
-   --main-txt: #3c3c3c;
+   --main-txt: #6a6a6a;
    --cream-txt: #f8f7f2;
    --nav-active: #bab48f;
    --footer-text: #d8d48e;
    --blue-bg-text: #d8d4be;
+   --blue-text: #257282;
 
    /*backgrounds*/
    --blue-bg: #257282;
@@ -111,7 +112,14 @@ p {
    color: var(--cream-txt);
    transition: background .2s ease-in-out;
 }
-
+.btn-blue {
+   padding: 10px 20px;
+   border: 2px solid var(--blue-bg);
+   border-radius: 3px;
+   color: var(--blue-text);
+   font-weight: 600;
+   letter-spacing: .1em;
+}
 
 /* Header  -----------------------------------*/
 header {
@@ -214,6 +222,7 @@ header .flex {
    background-color: var(--cream-bg);
    margin-top: -130px;
    padding-top: 130px;
+   color: var(--main-txt);
 }
 
 
@@ -265,7 +274,51 @@ header .flex {
 }
 
 /* Approach-Specialties ----------------------------*/
+.approach-specialties {
+   background-color: var(--cream-bg);
+   color: var(--main-txt);
+   padding: 100px 0;
+}
+.approach-specialties .content {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 40px;
+}
+/* .approach-specialties .approach {
+   grid-column: 1 / span 2;
+}
+.approach-specialties .specialties {
+   grid-column: 3 / span 1;
+} */
 
+.approach-specialties h2 {
+   margin-bottom: 20px;
+   color: var(--blue-text);
+}
+.approach-specialties h4 {
+   margin-bottom: 10px;
+}
+
+
+/* approach */
+.approach-specialties .approach {
+   max-width: 80%;
+}
+.approach-specialties ul {
+   font-family: 'Fira Sans', sans-serif;
+   font-weight: 300;
+}
+.approach-specialties ul li {
+   margin-bottom: 8px;
+}
+.approach-specialties .btn-approach {
+   margin-top: 40px;
+}
+.approach-specialties .btn {
+   font-weight: 600;
+}
+
+/* specialties */
 
 
 
