@@ -159,14 +159,14 @@ header .flex {
 }
 .navbar .nav-btn a {
    padding: 10px 20px;
-   border: 2px solid var(--main-txt);
+   border: 2px solid var(--black-bg);
    border-radius: 3px;
-   color: var(--main-txt);
+   color: var(--black-bg);
    font-weight: 600;
    letter-spacing: .06em;
 }
 .navbar .nav-btn a:hover {
-   background-color: var(--main-txt);
+   background-color: var(--black-bg);
    color: var(--cream-txt);
    transition: background .3s ease-in-out;
 }
@@ -425,7 +425,7 @@ header .flex {
 .contact .contents .title h1 {
    font-size: 30px;
    max-width: 500px;
-   margin: 0 auto 40px auto;
+   margin: 0 auto 60px auto;
 }
 .contact .contents .contact-info-note p {
    color: var(--cream-txt);
@@ -637,6 +637,22 @@ header .flex {
    }
    .approach-specialties .contents .specialties .lists {
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+   }
+
+   /*Contact*/
+   .contact .contents form {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px 0;
+   }
+   .contact .contents form .form-control {
+      grid-column: 1 / span 1;
+   }
+   .contact .contents .contact-info-note {
+      grid-template-columns: repeat(1, minmax(122px, 1fr));
+   }
+   .contact .contents .contact-info-note .contact-info {
+      margin-bottom: 10px;
    }
 }
 
