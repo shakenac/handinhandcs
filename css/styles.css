@@ -282,7 +282,9 @@ header .flex {
 .approach-specialties .content {
    display: grid;
    grid-template-columns: 1fr 1fr;
+   /* grid-template-row: minmax(auto-fit, 300px); */
    grid-gap: 40px;
+   padding-bottom: 20px;
 }
 /* .approach-specialties .approach {
    grid-column: 1 / span 2;
@@ -290,7 +292,6 @@ header .flex {
 .approach-specialties .specialties {
    grid-column: 3 / span 1;
 } */
-
 .approach-specialties h2 {
    margin-bottom: 20px;
    color: var(--blue-text);
@@ -309,7 +310,8 @@ header .flex {
    font-weight: 300;
 }
 .approach-specialties ul li {
-   margin-bottom: 8px;
+   margin-bottom: 15px;
+   line-height: 1.4em;
 }
 .approach-specialties .btn-approach {
    margin-top: 40px;
@@ -319,7 +321,11 @@ header .flex {
 }
 
 /* specialties */
-
+.approach-specialties .specialties .lists {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 20px;
+}
 
 
 
