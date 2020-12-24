@@ -57,7 +57,7 @@ a {
    font-family: 'Fira Sans', sans-serif;
    font-size: 14px;
    font-weight: 400;
-   color: #3c3c3c;
+   /* color: #3c3c3c; */
    letter-spacing: .03em;
    text-decoration: none;
    text-transform: uppercase;
@@ -148,18 +148,24 @@ header .flex {
 .navbar nav li {
    padding-right: 20px;
 }
+.navbar nav a {
+   color: var(--main-txt);
+}
 .navbar nav a:hover {
    font-weight: 700;
-   color: var(--blue-bg);
+   color: var(--main-txt);
    transition: background .2s ease-in-out;
 }
 .navbar .nav-btn a {
    padding: 10px 20px;
    border: 2px solid var(--main-txt);
    border-radius: 3px;
+   color: var(--main-txt);
+   font-weight: 600;
+   letter-spacing: .06em;
 }
 .navbar .nav-btn a:hover {
-   background-color: var(--black-bg);
+   background-color: var(--main-txt);
    color: var(--cream-txt);
    transition: background .3s ease-in-out;
 }
@@ -285,7 +291,7 @@ header .flex {
 .approach-specialties {
    background-color: var(--cream-bg);
    color: var(--main-txt);
-   padding: 100px 0;
+   padding: 100px 0 70px 0;
 }
 .approach-specialties .content {
    display: grid;
@@ -301,7 +307,7 @@ header .flex {
    grid-column: 3 / span 1;
 } */
 .approach-specialties h2 {
-   margin-bottom: 20px;
+   margin-bottom: 25px;
    color: var(--blue-text);
 }
 .approach-specialties h4 {
@@ -358,7 +364,7 @@ header .flex {
       width: 35px;
    }
    .toggle-button .bar {
-      background-color: black;
+      background-color: var(--black-bg);
       height: 2px;
       border-radius: 2px;
    }
