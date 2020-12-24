@@ -98,6 +98,7 @@ p {
    font-size: 15px;
    line-height: 1.5em;
 }
+
 .btn-light {
    padding: 10px 20px;
    border: 2px solid var(--blue-bg-text);
@@ -120,6 +121,13 @@ p {
    font-weight: 600;
    letter-spacing: .1em;
 }
+.btn-blue:hover {
+   background-color: var(--main-txt);
+   border: 2px solid var(--main-txt);
+   color: var(--cream-txt);
+   transition: background .2s ease-in-out;
+}
+
 
 /* Header  -----------------------------------*/
 header {
@@ -333,9 +341,9 @@ header .flex {
 .approach-specialties .specialties .lists ul .list-item i {
    display: flex;
    margin-right: 5px;
-   font-size: 10px;
+   font-size: 8px;
    position: relative;
-   top: 6px;
+   top: 7px;
 }
 
 
