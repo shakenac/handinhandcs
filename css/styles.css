@@ -292,7 +292,7 @@ header .flex {
 .approach-specialties {
    background-color: var(--cream-bg);
    color: var(--main-txt);
-   padding: 100px 0 70px 0;
+   padding: 80px 0 70px 0;
 }
 .approach-specialties .contents {
    display: grid;
@@ -531,6 +531,9 @@ footer .contents {
    grid-column-gap: 20px;
    padding: 30px 0;
 }
+footer p  {
+   font-size: 12px;
+}
 footer .left-column .list-item {
    display: flex;
    margin-bottom: 5px;
@@ -538,7 +541,7 @@ footer .left-column .list-item {
 footer .left-column .list-item i {
    margin-right: 7px;
    position: relative;
-   top: 7px;
+   top: 5px;
    font-size: 8px;
 }
 footer .left-column .therapist-name {
@@ -716,19 +719,40 @@ footer .right-column .remote {
 
 /* Mobile */
 @media screen and (max-width: 550px) {
-   /* opening statement */
+
+   /* Banner */
+   .banner {
+      height: 350px;
+   }
+   .banner::before {
+      content: '';
+      background-color: var(--banner-overlay);
+      height: 350px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      opacity: 0.6;
+      z-index: 1;
+   }
+
+   /* Inner */
+   .inner {
+      padding: 70px 40px;
+   }
+
+   /* Opening Statement */
    .open-statement {
       height: 1000px;
    }
+
    /* Home Images */
    .image-gallery {
-      margin-top: -600px;
+      margin-top: -670px;
    }
    .image-gallery .gallery .images {
       max-height: 200px;
-      /* overflow: hidden;
-      border-radius: 3px; */
    }
+
    /* Mission */
    .mission {
       margin-top: -320px;
@@ -736,10 +760,34 @@ footer .right-column .remote {
    }
 
    /* Offers images */
+   .offers {
+      padding: 70px 0;
+   }
    .offers .services-home .column .thumbnails {
       height: 200px;
    }
    .offers .btn {
       margin-top: 40px;
+   }
+
+   /* Approach Specialties */
+   .approach-specialties {
+      padding: 70px 0 50px 0;
+   }
+
+   /* Testimonials */
+   .testimonials {
+      padding: 70px 0;
+   }
+
+   /* Contact */
+   .contact {
+      padding: 250px 0 70px 0;
+   }
+
+   /* Footer */
+
+   footer .left-column .therapist-name {
+      margin-bottom: 11px;
    }
 }
