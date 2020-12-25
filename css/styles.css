@@ -360,7 +360,7 @@ header .flex {
 .testimonials {
    padding: 100px 0;
    background-color: var(--orange-bg);
-   color: var(--orange-bg-text);
+   color: var(--cream-txt);
    height: 630px;
 }
 .testimonials .contents h3 {
