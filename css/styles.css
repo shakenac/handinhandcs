@@ -826,3 +826,22 @@ footer .right-column .remote {
       margin-bottom: 11px;
    }
 }
+
+
+@media screen and (max-width: 414px) {
+   /* Testimonials */
+   .testimonials {
+      height: 780px;
+   }
+   
+   /* Contact Image */
+   .contact-image {
+      margin-top: -365px;
+   }
+
+   /* Contact */
+   .contact {
+      padding: 190px 0 100px;
+      margin-top: -91px;
+   }
+}
