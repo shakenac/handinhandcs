@@ -193,6 +193,9 @@ header .flex {
    max-width: 375px;
    z-index: 5;
 }
+.banner .banner-inner h1 {
+   letter-spacing: .05em;
+}
 .banner .banner-inner .indent {
    padding-left: 20px;
 }
