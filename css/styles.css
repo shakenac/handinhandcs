@@ -265,6 +265,7 @@ header .flex {
    grid-template-columns: 1fr 1fr 1fr;
    grid-column-gap: 20px;
    margin-top: 40px;
+   margin-bottom: 80px;
 }
 
 .offers .services-home .thumbnails {
@@ -285,7 +286,7 @@ header .flex {
 .offers .btn {
    display: grid;
    place-items: center;
-   margin-top: 80px;
+   /* margin-top: 80px; */
 }
 
 /* Approach-Specialties ----------------------------*/
@@ -655,6 +656,7 @@ footer .right-column .remote {
    .offers .services-home {
       grid-template-columns: 1fr;
       grid-row-gap: 20px;
+      margin-bottom: 40px;
    }
    .offers .services-home .column {
       margin-bottom: 15px;
@@ -785,11 +787,11 @@ footer .right-column .remote {
    .offers {
       padding: 70px 0;
    }
+   .offers .services-home {
+      margin: 40px;
+   }
    .offers .services-home .column .thumbnails {
       height: 200px;
-   }
-   .offers .btn {
-      margin-top: 40px;
    }
 
    /* Approach Specialties */
