@@ -563,7 +563,7 @@ footer .right-column .remote {
 
    /* banner button */
    .banner .banner-btn {
-      margin-top: 30px;
+      margin-top: 55px;
       display: flex;
    }
    .banner .banner-btn a {
@@ -573,9 +573,9 @@ footer .right-column .remote {
       color: var(--cream-txt);
    }
    .banner .banner-btn a:hover {
-      background-color: var(--black-bg);
+      background-color: #1d1d1d;
       color: var(--cream-txt);
-      border: 2px solid var(--black-bg);
+      border: 2px solid #1d1d1d;
       transition: background .3s ease-in-out;
    }
 }
