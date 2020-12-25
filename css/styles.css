@@ -745,7 +745,6 @@ footer .right-column .remote {
       margin: 0 0 60px 0;
    }
 }
-}
 
 /* Mobile */
 @media screen and (max-width: 550px) {
@@ -755,14 +754,13 @@ footer .right-column .remote {
       height: 350px;
    }
    .banner::before {
-      content: '';
-      background-color: var(--banner-overlay);
       height: 350px;
-      width: 100%;
-      position: absolute;
-      left: 0;
-      opacity: 0.6;
-      z-index: 1;
+   }
+   .banner .banner-inner .indent {
+      padding-left: 0;
+   }
+   .banner .banner-inner h1 {
+      font-size: 20px;
    }
 
    /* Inner */
