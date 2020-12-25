@@ -701,20 +701,42 @@ footer .right-column .remote {
       margin-bottom: 10px;
    }
 
-
    /* Testimonials */
-      /* .testimonials {
-         height: 680px;
-      } */
+   .testimonials .contents .testimonial {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-column-gap: 20px;
+   }
+   .testimonials .contents .testimonial .quotation-left {
+      grid-column: 1 / span 1;
+      text-align: right;
+   }
+   .testimonials .contents .testimonial .quotation-right {
+      grid-column: 12 / span 1;
+      text-align: left;
+   }
+   .testimonials .contents .testimonial .quote {
+      grid-column: 2 / span 10;
+      text-align: center;
+      font-style: italic;
+   }
+
    /* Contact Image */
    .contact-image {
-      margin-top: -300px;
+      margin-top: -315px;
    }
    /* Contact */
    .contact {
       padding: 250px 0 100px 0;
       margin-top: -165px;
    }
+   .contact .contents .title {
+      text-align: left;
+   }
+   .contact .contents .title h1 {
+      margin: 0 0 60px 0;
+   }
+}
 }
 
 /* Mobile */
@@ -779,14 +801,25 @@ footer .right-column .remote {
    .testimonials {
       padding: 70px 0;
    }
+   .testimonials p {
+      margin-top: 30px;
+   }
+
+   /* Contact Image */
+   .contact-image {
+      margin-top: -360px;
+   }
 
    /* Contact */
    .contact {
-      padding: 250px 0 70px 0;
+      padding: 180px 0 70px 0;
+      margin-top: -100px;
+   }
+   .contact .contents .title {
+      text-align: left;
    }
 
    /* Footer */
-
    footer .left-column .therapist-name {
       margin-bottom: 11px;
    }
