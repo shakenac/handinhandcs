@@ -715,6 +715,9 @@ footer .right-column .remote {
       grid-template-columns: repeat(12, 1fr);
       grid-column-gap: 20px;
    }
+   .testimonials p {
+      margin-top: 40px;
+   }
    .testimonials .contents .testimonial .quotation-left {
       grid-column: 1 / span 1;
       text-align: right;
