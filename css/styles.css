@@ -141,6 +141,10 @@ header .flex {
    width: 250px;
 }
 
+/* .mobile-nav-icon {
+   display: none;
+} */
+
 .navbar nav ul {
    display: flex;
    justify-content: space-between;
@@ -170,23 +174,6 @@ header .flex {
    transition: background .3s ease-in-out;
 }
 
-/* Mobile Nav Icon */
-.st0 {
-   fill: none;
-   stroke: #3C3C3C;
-   stroke-miterlimit: 10;
-}
-.st1 {
-   fill: none;
-   stroke: #3C3C3C;
-   stroke-width: 25;
-   stroke-linecap: round;
-   stroke-miterlimit: 10;
-}
-/* .mobile-nav-icon {
-   width: 35px;
-   cursor: pointer;
-} */
 
 /* Banner  -----------------------------------*/
 .banner {
@@ -636,18 +623,7 @@ footer .right-column .remote {
    }
 
    /* mobile menu */
-   /* .toggle-button {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 17px;
-      width: 35px;
-   }
-   .toggle-button .bar {
-      background-color: var(--black-bg);
-      height: 2px;
-      border-radius: 2px;
-   } */
+
    .navbar {
       width: 100%;
       height: 60px;
@@ -658,12 +634,50 @@ footer .right-column .remote {
    .navbar nav {
       display: none;
    }
+
+   /* NOTE FOR MOBILE NAV ICON: MUST ADD TRANSFORM/TRASITION IN FOR IT TO ROTATE BACK */
+   .st0 {
+      fill: none;
+      stroke: #3C3C3C;
+      stroke-miterlimit: 10;
+   }
+   .st1 {
+      fill: none;
+      stroke: #3C3C3C;
+      stroke-width: 25;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+   }
+   .st0 {
+      fill: none;
+      stroke: #3C3C3C;
+      stroke-miterlimit: 10;
+   }
+   .st1 {
+      fill: none;
+      stroke: #3C3C3C;
+      stroke-width: 25;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+   }
    .mobile-nav-icon {
-      width: 35px;
+      width: 30px;
       cursor: pointer;
+      /* display: flex; */
       /* position: relative;
       top: 3px; */
    }
+   .mobile-nav-icon:hover /*Change hover to onClick*/{
+      /* transform: rotate(-180deg);
+      transition: transform 150ms ease; */
+   }
+   /* When user clicks off:
+      .mobile-nav-icon {
+         transform: rotate( -360deg );
+         transition: transform 150ms ease;
+      }
+   */
+
 
    /* opening statement */
    .open-statement {
