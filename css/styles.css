@@ -175,7 +175,7 @@ header .flex {
 }
 
 
-/* Banner  -----------------------------------*/
+/* Banner(s)  -----------------------------------*/
 .banner {
    background-image: url(../images/simon-follin-wFji3OS5us0-unsplash.jpg);
    background-size: cover;
@@ -193,19 +193,40 @@ header .flex {
    opacity: 0.6;
    z-index: 1;
 }
-.banner .banner-inner {
+
+/* About Me Page Banner */
+.banner-about {
+   background-image: url(../images/sven-mieke-7NTc2bMDHHg-unsplash.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 450px;
+}
+.banner-about::before {
+   content:'';
+   background-color: var(--banner-overlay);
+   height: 450px;
+   width: 100%;
+   position: absolute;
+   left: 0;
+   opacity: 0.6;
+   z-index: 1;
+}
+
+
+.banner-inner {
    max-width: 400px;
    z-index: 5;
 }
-.banner .banner-inner h1 {
+.banner-inner h1 {
    letter-spacing: .05em;
 }
-.banner .banner-inner .indent {
+.banner-inner .indent {
    padding-left: 20px;
 }
 
 /* banner button */
-.banner .banner-btn {
+.banner-btn {
    margin-top: 30px;
    display: none;
 }
@@ -569,17 +590,17 @@ footer .right-column .remote {
    }
 
    /* banner button */
-   .banner .banner-btn {
+   .banner-btn {
       margin-top: 55px;
       display: flex;
    }
-   .banner .banner-btn a {
+   .banner-btn a {
       padding: 10px 20px;
       border: 2px solid var(--cream-txt);
       border-radius: 3px;
       color: var(--cream-txt);
    }
-   .banner .banner-btn a:hover {
+   .banner-btn a:hover {
       background-color: #1d1d1d;
       color: var(--cream-txt);
       border: 2px solid #1d1d1d;
@@ -883,7 +904,6 @@ footer .right-column .remote {
       font-size: 12px;
    }
 }
-
 
 @media screen and (max-width: 414px) {
    /* Testimonials */
