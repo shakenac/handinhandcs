@@ -583,28 +583,33 @@ footer .right-column .remote {
 
 /* ABOUT ME Page -----------------------------------*/
 
+/* About Summary Section ----*/
 .about-summary {
-   background-color: var(--cream-bg);
-   color: var(--main-txt);
+   background-color: var(--blue-bg);
+   color: var(--cream-bg);
 }
-.about-summary .contents {
+.about-summary h3 {
+   color: var(--blue-bg-text);
+}
+
+
+/* About Info Section ----*/
+.about-info {
+   padding: 100px 0;
+}
+.about-info .contents {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-gap: 20px;
 }
-.about-summary .about-photo {
+.about-info .about-photo {
    max-height: 400px;
 }
-.about-summary .about-photo img {
+.about-info .about-photo img {
    width: 100%;
 }
-.about-summary .contents .about-info .about-me-name {
-   color: var(--blue-text);
-   margin-bottom: 15px;
-}
-.about-summary .contents .about-info p {
-   margin-top: 15px;
-}
+
+
 
 
 
