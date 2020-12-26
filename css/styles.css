@@ -625,6 +625,37 @@ footer .right-column .remote {
 }
 
 
+/* Qualifications Section ------*/
+.qualifications {
+   background-color: var(--orange-bg);
+   padding: 100px 0;
+   color: var(--cream-txt);
+}
+.qualifications .content {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+.qualifications .content .column-1 {
+   max-width: 82%;
+}
+.qualifications h2 {
+   margin-bottom: 20px;
+   color: var(--orange-bg-text);
+}
+.qualifications .content .column-2 .list-item {
+   display: flex;
+   margin-bottom: 6px;
+}
+.qualifications .content .column-2 .list-item i {
+   display: flex;
+   margin-right: 5px;
+   font-size: 8px;
+   position: relative;
+   top: 7px;
+}
+
+
+
 /* Media Queries -----------------------------------*/
 @media screen and (max-width: 1024px) {
    /* Navigation */
