@@ -129,7 +129,7 @@ p {
 }
 
 
-/* Header  -----------------------------------*/
+/* Header  --------------*/
 header {
    background-color: #fff;
    /* z-index: 5; */
@@ -175,7 +175,7 @@ header .flex {
 }
 
 
-/* Banner(s)  -----------------------------------*/
+/* Banner(s)  ---------------*/
 .banner {
    background-image: url(../images/simon-follin-wFji3OS5us0-unsplash.jpg);
    background-size: cover;
@@ -200,12 +200,12 @@ header .flex {
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
-   height: 450px;
+   height: 300px;
 }
 .banner-about::before {
    content:'';
    background-color: var(--banner-overlay);
-   height: 450px;
+   height: 300px;
    width: 100%;
    position: absolute;
    left: 0;
@@ -232,7 +232,7 @@ header .flex {
 }
 
 
-/* Open Statement  -----------------------------------*/
+/* Open Statement  -----------*/
 .open-statement {
    background-color: var(--orange-bg);
    color: var(--cream-txt);
@@ -240,7 +240,7 @@ header .flex {
 }
 
 
-/* Image Gallery  -----------------------------------*/
+/* Image Gallery  -----------*/
 .image-gallery {
    margin-top: -150px;
 }
@@ -259,7 +259,7 @@ header .flex {
 }
 
 
-/* Mission  -----------------------------------*/
+/* Mission  ----------------*/
 .mission {
    background-color: var(--cream-bg);
    margin-top: -130px;
@@ -268,7 +268,7 @@ header .flex {
 }
 
 
-/* Services Offerend  -----------------------------------*/
+/* Services Offerend  -------*/
 .offers {
    background-color: var(--blue-bg);
    padding: 100px 0;
@@ -316,7 +316,7 @@ header .flex {
    /* margin-top: 80px; */
 }
 
-/* Approach-Specialties ----------------------------*/
+/* Approach-Specialties -------*/
 .approach-specialties {
    background-color: var(--cream-bg);
    color: var(--main-txt);
@@ -384,7 +384,7 @@ header .flex {
 }
 
 
-/* Testimonials  -----------------------------------*/
+/* Testimonials  -----------*/
 .testimonials {
    padding: 100px 0;
    background-color: var(--orange-bg);
@@ -426,7 +426,7 @@ header .flex {
 }
 
 
-/* Contact Image  -----------------------------------*/
+/* Contact Image  -----------*/
 .contact-image {
    margin-top: -250px;
 }
@@ -437,7 +437,7 @@ header .flex {
 }
 
 
-/* Contact Section  -----------------------------------*/
+/* Contact Section  ----------*/
 .contact {
    background-color: var(--blue-bg);
    padding: 380px 0 100px 0;
@@ -547,7 +547,7 @@ header .flex {
 }
 
 
-/* Footer  -----------------------------------*/
+/* Footer  ---------------*/
 footer {
    background-color: var(--black-bg);
    color: var(--blue-bg-text);
@@ -579,6 +579,33 @@ footer .left-column .therapist-name {
 footer .right-column .remote {
    margin-bottom: 15px;
 }
+
+
+/* ABOUT ME Page -----------------------------------*/
+
+.about-summary {
+   background-color: var(--cream-bg);
+   color: var(--main-txt);
+}
+.about-summary .contents {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 20px;
+}
+.about-summary .about-photo {
+   max-height: 400px;
+}
+.about-summary .about-photo img {
+   width: 100%;
+}
+.about-summary .contents .about-info .about-me-name {
+   color: var(--blue-text);
+   margin-bottom: 15px;
+}
+.about-summary .contents .about-info p {
+   margin-top: 15px;
+}
+
 
 
 
