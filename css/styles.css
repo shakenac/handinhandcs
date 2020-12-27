@@ -597,32 +597,47 @@ footer .right-column .remote {
 .about-info {
    padding: 100px 0;
    background-color: var(--cream-bg);
-   text-align: center;
-}
-.about-info .contents .about-title {
-   margin-bottom: 35px;
-}
-.about-info .contents .about-title h3 {
    color: var(--main-txt);
-   margin-bottom: 8px;
 }
-.about-info .contents .about-title .credentials {
+.about-info .container {
+   max-width: 1100px;
+}
+.about-info .contents {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 20px;
+   padding: 10px 0 10px 0;
+}
+.about-info .contents .column-1 img {
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   /* box-shadow: var(--shadow);*/
+   box-shadow: 0px 0px 5px 15px rgba(138,138,138,0.02);
+   -webkit-box-shadow: 0px 0px 5px 15px rgba(138,138,138,0.02);
+   -moz-box-shadow: 0px 0px 5px 15px rgba(138,138,138,0.02);
+}
+.about-info .contents .column-2 h2 {
+   color: var(--blue-text);
+   margin-bottom: 12px;
+   margin-left: -2px;
+
+}
+.about-info .contents .column-2 h3 {
+   color: var(--black-bg);
+   margin-bottom: 20px;
+}
+.about-info .contents .column-2 h4 {
+   margin-bottom: 20px;
+}
+.about-info .contents .column-2 .credentials {
    font-weight: 500;
    text-transform: none;
 }
-.about-info .contents .about-me-img {
-   margin-bottom: 35px;
-}
-.about-info .contents .about-me-img img {
-   width: 175px;
-   height: 175px;
-   border-radius: 50%;
+.about-info .contents .column-2 p {
+   font-weight: 300;
 }
 
-.about-info .contents h4 {
-   max-width: 550px;
-   margin: 0 auto;
-}
 
 
 /* Qualifications Section ------*/
@@ -634,6 +649,7 @@ footer .right-column .remote {
 .qualifications .content {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
+   grid-gap: 20px;
 }
 .qualifications .content .column-1 {
    max-width: 82%;
