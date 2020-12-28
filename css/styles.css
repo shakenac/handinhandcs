@@ -196,7 +196,7 @@ header .flex {
 
 /* About Me Page Banner */
 .banner-about {
-   background-image: url(../images/sven-mieke-7NTc2bMDHHg-unsplash.jpg);
+   background-image: url(../images/olivier-piquer-PV26u-tR3fw-unsplash_flip.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
@@ -595,7 +595,7 @@ footer .right-column .remote {
 
 /* About Info Section ------*/
 .about-info {
-   padding: 100px 0;
+   padding: 80px 0;
    background-color: var(--cream-bg);
    color: var(--main-txt);
 }
@@ -608,11 +608,21 @@ footer .right-column .remote {
    grid-gap: 20px;
    padding: 10px 0 10px 0;
 }
+
+.about-info .contents .column-1  {
+   /* width: 300px; */
+   /* max-height: 400px;
+   box-shadow: 0px 0px 5px 15px rgba(138,138,138,0.02);
+   -webkit-box-shadow: 0px 0px 5px 15px rgba(138,138,138,0.02);
+   -moz-box-shadow: 0px 0px 5px 15px rgba(138,138,138,0.02); */
+}
+
 .about-info .contents .column-1 img {
-   width: 300px;
+   /* width: 300px;
    height: 300px;
-   border-radius: 50%;
+   border-radius: 50%; */
    /* box-shadow: var(--shadow);*/
+   width: 100%;
    box-shadow: 0px 0px 5px 15px rgba(138,138,138,0.02);
    -webkit-box-shadow: 0px 0px 5px 15px rgba(138,138,138,0.02);
    -moz-box-shadow: 0px 0px 5px 15px rgba(138,138,138,0.02);
@@ -642,7 +652,7 @@ footer .right-column .remote {
 
 /* Qualifications Section ------*/
 .qualifications {
-   background-color: var(--orange-bg);
+   background-color: var(--blue-bg);
    padding: 100px 0;
    color: var(--cream-txt);
 }
@@ -656,7 +666,7 @@ footer .right-column .remote {
 }
 .qualifications h2 {
    margin-bottom: 20px;
-   color: var(--orange-bg-text);
+   color: var(--blue-bg-text);
 }
 .qualifications .content .column-2 .list-item {
    display: flex;
