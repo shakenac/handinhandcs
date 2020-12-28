@@ -248,18 +248,29 @@ header .flex {
 .open-statement {
    background-color: var(--orange-bg);
    color: var(--cream-txt);
-   height: 500px;
 }
 
 
 /* Image Gallery  -----------*/
 .image-gallery {
-   margin-top: -150px;
+   background-color: var(--orange-bg);
+   position: relative;
+}
+.image-gallery::after {
+   content: '';
+   background-color: var(--cream-bg);
+   position: absolute;
+   height: 50%;
+   bottom: 0;
+   right: 0;
+   left: 0;
 }
 .image-gallery .gallery {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-gap: 20px;
+   position: relative;
+   z-index: 5;
 }
 .image-gallery .gallery .images {
    box-shadow: var(--shadow);
@@ -273,8 +284,6 @@ header .flex {
 /* Mission  ----------------*/
 .mission {
    background-color: var(--cream-bg);
-   margin-top: -130px;
-   padding-top: 130px;
    color: var(--main-txt);
 }
 
@@ -440,7 +449,7 @@ header .flex {
    background-color: var(--blue-bg);
    position: absolute;
    height: 50%;
-   bottom: -50px;
+   bottom: 0;
    right: 0;
    left: 0;
 }
@@ -917,9 +926,7 @@ footer .right-column .remote {
    }
 
    /* Contact Image */
-   /* .contact-image {
-      margin-top: -315px;
-   } */
+
    /* Contact */
    .contact {
       padding: 100px 0;
@@ -999,9 +1006,7 @@ footer .right-column .remote {
    }
 
    /* Contact Image */
-   /* .contact-image {
-      margin-top: -360px;
-   } */
+
 
    /* Contact */
    .contact {
@@ -1022,19 +1027,4 @@ footer .right-column .remote {
 }
 
 @media screen and (max-width: 414px) {
-   /* Testimonials */
-   .testimonials {
-      /* height: 780px; */
-   }
-
-   /* Contact Image */
-   .contact-image {
-      /* margin-top: -365px; */
-   }
-
-   /* Contact */
-   .contact {
-      /* padding: 190px 0 100px; */
-      /* margin-top: -91px; */
-   }
 }
