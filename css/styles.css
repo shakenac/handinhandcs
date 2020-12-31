@@ -826,6 +826,7 @@ footer .right-column .remote {
 }
 .cost-affiliates h2 {
    margin-bottom: 15px;
+   color: #fff;
 }
 .cost-affiliates h3 {
    color: var(--orange-bg-text);
@@ -1120,7 +1121,6 @@ footer .right-column .remote {
    /* Contact Image */
 
    /* Contact */
-
    .contact .contents .title {
       text-align: left;
    }
@@ -1145,14 +1145,25 @@ footer .right-column .remote {
    }
 
    /* SERVICES PAGE ------------- */
+   .services .contents {
+      grid-row-gap: 50px;
+   }
    .services .contents .column {
-      display: grid;
       grid-template-columns: 1fr;
       grid-gap: 40px;
    }
    .services .contents .education-workshops .workshop-list {
       grid-template-columns: 1fr;
    }
+   /* cost */
+   .cost-affiliates .fees .payment .payment-list {
+      grid-template-columns: 1fr;
+   }
+   .cost-affiliates .fees .payment .payment-list .column-1,
+   .cost-affiliates .fees .payment .payment-list .column-2 {
+      max-width: 100%;
+   }
+
 }
 
 /* Mobile */
@@ -1244,6 +1255,13 @@ footer .right-column .remote {
    .qualifications .content {
       grid-template-columns: 1fr;
    }
+
+
+   /* COST ---------*/
+   .cost-affiliates .contents {
+      grid-template-columns: 1fr;
+   }
+
 }
 
 @media screen and (max-width: 414px) {
