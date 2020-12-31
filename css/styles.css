@@ -743,7 +743,7 @@ footer .right-column .remote {
 
 /* Services Section */
 .services {
-   padding: 100px 0;
+   padding: 80px 0;
    background-color: var(--cream-bg);
    color: var(--main-txt);
 }
@@ -818,8 +818,15 @@ footer .right-column .remote {
    margin-top: 13px;
 }
 
-
-
+/* Cost ---------- */
+.cost-affiliates {
+   background-color: var(--orange-bg);
+   padding: 80px 0;
+   color: var(--cream-txt);
+}
+.cost-affiliates h3 {
+   color: var(--orange-bg-text);
+}
 
 
 
