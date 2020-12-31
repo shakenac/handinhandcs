@@ -741,7 +741,7 @@ footer .right-column .remote {
 /* ------------------------------------------------------*/
 /* SERVICES PAGE ----------------------------------------*/
 
-/* Services Section */
+/* Services Section ----*/
 .services {
    padding: 80px 0;
    background-color: var(--cream-bg);
@@ -771,12 +771,9 @@ footer .right-column .remote {
 }
 .services .contents .education-workshops {
    margin-top: 40px;
+   padding-bottom: 17px;
 }
 
-
-.services .contents .education-workshops {
-   margin-top: 40px;
-}
 .services .list-item {
    display: flex;
    margin-bottom: 6px;
