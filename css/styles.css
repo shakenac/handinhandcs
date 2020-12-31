@@ -755,7 +755,11 @@ footer .right-column .remote {
    line-height: 1.2em;
    color: var(--blue-text);
 }
-
+.services .contents {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-row-gap: 40px;
+}
 .services .contents .column {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
@@ -770,7 +774,6 @@ footer .right-column .remote {
    box-shadow: 0px 0px 24px -7px rgba(0,0,0,0.07);
 }
 .services .contents .education-workshops {
-   margin-top: 40px;
    padding-bottom: 17px;
 }
 
@@ -883,9 +886,6 @@ footer .right-column .remote {
 
 
 
-
-
-
 /* Media Queries -----------------------------------*/
 @media screen and (max-width: 1024px) {
    /* Navigation */
@@ -941,6 +941,16 @@ footer .right-column .remote {
       position: static;
       /* top: -230px; */
       /* bottom: 300px; */
+   }
+
+   /* SERVICES PAGE ------------- */
+   .services .contents .column .description {
+      max-width: 100%;
+   }
+
+   .cost-affiliates .fees .payment .payment-list .column-1,
+   .cost-affiliates .fees .payment .payment-list .column-2 {
+      max-width: 64%;
    }
 
 }
@@ -1120,7 +1130,6 @@ footer .right-column .remote {
 
 
    /* ABOUT PAGE ------------- */
-
    .about-info .contents {
       grid-template-columns: 1fr;
    }
@@ -1133,6 +1142,16 @@ footer .right-column .remote {
       position: relative;
       top: -200px;
       /* bottom: 300px; */
+   }
+
+   /* SERVICES PAGE ------------- */
+   .services .contents .column {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 40px;
+   }
+   .services .contents .education-workshops .workshop-list {
+      grid-template-columns: 1fr;
    }
 }
 
