@@ -810,7 +810,6 @@ footer .right-column .remote {
    color: var(--cream-txt);
    transition: background .2s ease-in-out;
 }
-
 .services .contents .education-workshops .workshop-list {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
@@ -818,15 +817,72 @@ footer .right-column .remote {
    margin-top: 13px;
 }
 
+
 /* Cost ---------- */
 .cost-affiliates {
    background-color: var(--orange-bg);
    padding: 80px 0;
    color: var(--cream-txt);
 }
+.cost-affiliates h2 {
+   margin-bottom: 15px;
+}
 .cost-affiliates h3 {
    color: var(--orange-bg-text);
 }
+
+.cost-affiliates .contents {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 40px;
+}
+
+.cost-affiliates .contents .list-item {
+   display: flex;
+   margin-bottom: 2px;
+}
+.cost-affiliates .contents .list-item i {
+   display: flex;
+   margin-right: 5px;
+   font-size: 8px;
+   position: relative;
+   top: 7px;
+}
+.cost-affiliates .fees .session-cost {
+   margin-bottom: 15px;
+}
+.cost-affiliates .fees .session-cost span {
+   font-weight: 500;
+   /* border-bottom: 1px solid var(--cream-txt); */
+}
+.cost-affiliates .fees .payment .payment-note {
+   margin: 15px 0 10px;
+}
+.cost-affiliates .fees .note {
+   font-style: italic;
+}
+.cost-affiliates .fees .payment .payment-list {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 10px;
+}
+.cost-affiliates .fees .payment .payment-list .column-1,
+.cost-affiliates .fees .payment .payment-list .column-2 {
+   max-width: 48%;
+}
+
+
+.cost-affiliates .contents .affiliates .affiliates-list .row-2 {
+   margin-top: 20px;
+}
+.cost-affiliates .contents .affiliates .affiliates-list .row .description {
+   margin-left: 13px;
+}
+.cost-affiliates .affiliates .list-item p {
+   font-weight: 500;
+}
+
+
 
 
 
