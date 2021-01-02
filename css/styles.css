@@ -887,14 +887,44 @@ footer .right-column .remote {
 /* WORKSHOPS PAGE  -----------------------------------*/
 /* ACE Education Section ---- */
 
+.workshops {
+   padding: 100px 0;
+   color: var(--main-txt);
+}
+.workshops .container {
+   max-width: 820px;
+}
+.workshops h2 {
+   margin-bottom: 20px;
+   color: var(--blue-text);
+}
+.workshops p {
+   margin-bottom: 20px;
+   text-align: justify;
+}
 .ace {
-   padding: 80px 0;
+   margin-bottom: 60px;
 }
 
+.workshops .trauma .learn .strong {
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+.workshops .trauma .learn .lists {
+   margin-left: 20px;
+}
 
-
-
-
+.workshops .trauma .learn .lists .list-item {
+   display: flex;
+   margin-bottom: 2px;
+}
+.workshops .trauma .learn .lists .list-item i {
+   display: flex;
+   margin-right: 5px;
+   font-size: 8px;
+   position: relative;
+   top: 7px;
+}
 
 
 /* Media Queries -----------------------------------*/
