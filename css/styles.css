@@ -897,6 +897,7 @@ footer .right-column .remote {
 .workshops h2 {
    margin-bottom: 20px;
    color: var(--blue-text);
+   line-height: 1.2em;
 }
 .workshops p {
    margin-bottom: 20px;
@@ -925,6 +926,29 @@ footer .right-column .remote {
    position: relative;
    top: 7px;
 }
+
+
+
+/* CLIENTS PAGE  -----------------------------------*/
+/* Payments ---- */
+
+
+
+/* Reg-Forms ---- */
+
+
+
+
+/* New Client Form ---- */
+
+/* Thrid Pary Form ---- */
+
+
+
+
+
+
+
 
 
 /* Media Queries -----------------------------------*/
