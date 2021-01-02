@@ -883,7 +883,7 @@ footer .right-column .remote {
    font-weight: 500;
 }
 
-
+/* ------------------------------------------------------*/
 /* WORKSHOPS PAGE  -----------------------------------*/
 /* ACE Education Section ---- */
 
@@ -928,7 +928,7 @@ footer .right-column .remote {
 }
 
 
-
+/* ------------------------------------------------------*/
 /* CLIENTS PAGE  -----------------------------------*/
 /* Payments ---- */
 .payments {
@@ -999,10 +999,43 @@ footer .right-column .remote {
 }
 
 
-
-
 /* Reg-Forms ---- */
+.reg-forms {
+   padding: 80px 0;
+   background-color: #1e505a;
+   color: var(--cream-txt);
+}
+.reg-forms .contents {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 20px;
+}
+.reg-forms h2 {
+   margin-bottom: 40px;
+   color: var(--cream-txt);
+}
+.reg-forms h3 {
+   color: var(--blue-bg-text);
+}
+.reg-forms .contents .btn .btn-reg {
+   display: block;
+   text-align: center;
+}
 
+.btn-reg {
+   padding: 12px 20px;
+   border: 2px solid var(--cream-bg);
+   border-radius: 3px;
+   color: var(--cream-bg);
+   font-weight: 600;
+   letter-spacing: .1em;
+}
+.btn-reg:hover {
+   background-color: var(--black-bg);
+   border: 2px solid var(--black-bg);
+   color: var(--cream-txt);
+   transition: background .2s ease-in-out;
+}
 
 /* New Client Form ---- */
 
@@ -1304,9 +1337,6 @@ footer .right-column .remote {
       grid-template-columns: 1fr;
       grid-row-gap: 40px;
    }
-   /* .payments .contents .column-1 {
-      max-width: 100%;
-   } */
 
 }
 
@@ -1399,7 +1429,6 @@ footer .right-column .remote {
    .qualifications .content {
       grid-template-columns: 1fr;
    }
-
 
    /* COST ---------*/
    .cost-affiliates .contents {
