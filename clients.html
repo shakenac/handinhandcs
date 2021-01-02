@@ -86,14 +86,13 @@
                <p>All payments will be applied to your account and a receipt will be received once payment is cleared.</p>
             </div> <!-- column-1 -->
 
-
             <!-- column-2 -->
             <div class="column column-2">
                <p>Enter your amount and press "Pay Now" to submit.</p>
                <div class="paypal">
                   <form name="_xclick" action="https://www.paypal.com/us/cgi-bin/webscr" method="post">
-                     <div class="form-control amount">
-                        <input type="text" name="amount" value="" placeholder="Enter Amount Here">
+                     <div class="form-control">
+                        <input type="text" name="amount" value="" placeholder="Enter Amount Here" required>
                      </div>
                      <div class="submit">
       						<input type="submit" class="form-btn" value="submit">

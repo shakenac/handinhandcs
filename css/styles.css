@@ -931,6 +931,74 @@ footer .right-column .remote {
 
 /* CLIENTS PAGE  -----------------------------------*/
 /* Payments ---- */
+.payments {
+   padding: 90px 0;
+   background-color: var(--cream-bg);
+   color: var(--main-txt);
+}
+.payments .contents {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 20px;
+}
+.payments h2 {
+   margin-bottom: 20px;
+   color: var(--blue-text);
+}
+
+/* column-1 */
+.payments .contents .column-1 {
+   max-width: 75%;
+}
+.payments .contents .column-1 .lists {
+   margin: 10px 0;
+}
+.payments .contents .lists .list-item {
+   display: flex;
+   margin-bottom: 2px;
+}
+.payments .contents .lists .list-item i {
+   display: flex;
+   margin-right: 5px;
+   font-size: 8px;
+   position: relative;
+   top: 7px;
+}
+
+/* column-2 */
+.payments .contents .column-2 p {
+   margin-bottom: 10px;
+   font-weight: 500;
+}
+.payments .contents .column-2 .paypal form .form-control input {
+   padding: 15px;
+   width: 100%;
+   border-radius: 3px;
+   border: 1.5px solid #ece8ce;
+}
+.payments .contents .column-2 .paypal form .submit {
+   margin-top: 20px;
+}
+.payments .contents .column-2 .paypal form .submit input {
+   padding: 12px 25px;
+   background-color: var(--cream-bg);
+   border-radius: 3px;
+   border: 2px solid var(--main-txt);
+   color: var(--main-txt);
+   cursor: pointer;
+   text-transform: uppercase;
+   font-family: 'Fira Sans', sans-serif;
+   font-weight: 500;
+   letter-spacing: .07em;
+}
+.payments .contents .column-2 .paypal form .submit input:hover {
+   background-color: var(--black-bg);
+   border: 2px solid var(--black-bg);
+   color: var(--cream-bg);
+   transition: background .3s ease-in-out;
+}
+
+
 
 
 /* Reg-Forms ---- */
@@ -1016,7 +1084,12 @@ footer .right-column .remote {
       max-width: 64%;
    }
 
+   /* CLIENTS PAGE ------------- */
+   .payments .contents .column-1 {
+      max-width: 100%;
+   }
 }
+
 
 /* Tablet */
 @media screen and (max-width: 768px) {
@@ -1225,6 +1298,15 @@ footer .right-column .remote {
    .cost-affiliates .fees .payment .payment-list .column-2 {
       max-width: 100%;
    }
+
+   /* CLIENTS PAGE ------------- */
+   .payments .contents {
+      grid-template-columns: 1fr;
+      grid-row-gap: 40px;
+   }
+   /* .payments .contents .column-1 {
+      max-width: 100%;
+   } */
 
 }
 
