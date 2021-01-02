@@ -60,7 +60,52 @@
 
 	<!-- Payments -->
    <section class="payments">
+      <div class="container">
+         <h3>Payments</h3>
+         <h2>Make a Payment</h2>
+         <div class="contents">
+            <!-- column-1 -->
+            <div class="column column-1">
+               <p>Here clients can make payments for:</p>
 
+               <!-- Lists -->
+               <div class="lists">
+                  <div class="list-item">
+                     <i class="fas fa-plus"></i>
+                     <p>Co-Pay</p>
+                  </div>
+                  <div class="list-item">
+                     <i class="fas fa-plus"></i>
+                     <p>Cancellation Fee</p>
+                  </div>
+                  <div class="list-item">
+                     <i class="fas fa-plus"></i>
+                     <p>Other Fees</p>
+                  </div>
+               </div><!--lists-->
+               <p>All payments will be applied to your account and a receipt will be received once payment is cleared.</p>
+            </div> <!-- column-1 -->
+
+
+            <!-- column-2 -->
+            <div class="column column-2">
+               <p>Enter your amount and press "Pay Now" to submit.</p>
+               <div class="paypal">
+                  <form name="_xclick" action="https://www.paypal.com/us/cgi-bin/webscr" method="post">
+                     <div class="form-control amount">
+                        <input type="text" name="amount" value="" placeholder="Enter Amount Here">
+                     </div>
+                     <div class="submit">
+      						<input type="submit" class="form-btn" value="submit">
+      					</div>
+                  </form>
+
+               </div>
+            </div> <!-- column-2 -->
+
+         </div> <!--contents-->
+
+      </div>
    </section>
 
 
@@ -72,6 +117,7 @@
 
    <!-- Reg Form Buttons -->
    <section class="client-forms">
+
       <!-- New Client Form -->
       <div class="new-client-form"></div>
 
