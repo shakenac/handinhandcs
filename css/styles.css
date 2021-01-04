@@ -1048,7 +1048,7 @@ footer .right-column .remote {
 }
 .reg-forms h2 {
    margin-bottom: 40px;
-   color: var(--cream-txt);
+   color: var(--blue-bg-text);
 }
 .reg-forms h3 {
    color: var(--blue-bg-text);
@@ -1067,13 +1067,80 @@ footer .right-column .remote {
    letter-spacing: .1em;
 }
 .btn-reg:hover {
-   background-color: var(--black-bg);
-   border: 2px solid var(--black-bg);
+   background-color: #272727;
+   border: 2px solid #272727;
    color: var(--cream-txt);
    transition: background .2s ease-in-out;
 }
 
-/* New Client Form ---- */
+/* Client forms --*/
+.client-forms {
+   background-color: var(--blue-bg);
+}
+
+/* New Client Form */
+
+
+
+/*form*/
+.client-forms .contents form {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 20px;
+}
+
+.client-forms .contents form .form-control input {
+   width: 100%;
+   padding: 15px;
+   border-radius: 3px;
+   border: none;
+   background-color: var(--form-input-bg);
+   color: var(--cream-txt);
+   font-size: 16px;
+}
+.client-forms .contents form .contact-message textarea {
+   width: 100%;
+   border: none;
+   font-family: 'Fira Sans', sans-serif;
+   font-size: 16px;
+   background-color: var(--form-input-bg);
+   color: var(--cream-txt);
+}
+.client-forms .contents form .contact-message {
+   grid-column: 1 / span 2;
+}
+.client-forms .contents form ::placeholder {
+   font-family: 'Fira Sans', sans-serif;
+   color: var(--form-placeholder-txt);
+}
+.client-forms .contents form .contact-message textarea {
+   padding: 15px;
+   border-radius: 3px;
+}
+.client-forms .contents form .submit {
+   grid-column: 1 / span 2;
+   text-align: center;
+   margin-top: 20px;
+}
+.client-forms .contents form .submit .form-btn {
+   border: 2px solid var(--blue-bg-text);
+   place-items: center;
+   padding: 15px 25px;
+   border-radius: 3px;
+   background-color: var(--blue-bg);
+   color: var(--blue-bg-text);
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing: .1em;
+}
+.client-forms .contents form .submit .form-btn:hover {
+   border: 2px solid var(--black-bg);
+   background-color: var(--black-bg);
+   color: var(--cream-bg);
+   font-weight: 700;
+}
+
+
 
 
 /* Thrid Pary Form ---- */
