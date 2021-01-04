@@ -272,6 +272,42 @@ header .flex {
 }
 
 
+/* New & Existing Page Banner */
+.banner-clients {
+   background-image: url(../images/Group.jpeg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 300px;
+}
+.banner-clients::before {
+   content:'';
+   background-color: var(--black-txt);
+   height: 300px;
+   width: 100%;
+   position: absolute;
+   left: 0;
+   opacity: 0.8;
+   z-index: 1;
+}
+.banner-clients .banner-inner .banner-name {
+   font-family: 'Segoe Script Bold', sans-serif;
+}
+.banner-clients .flex {
+   justify-content: center;
+   text-align: center;
+}
+.banner-clients .banner-inner .banner-btn {
+   justify-content: center;
+}
+.banner-clients .banner-inner h1 {
+   /* font-family: 'Segoe Script Bold', sans-serif; */
+   font-size: 27px;
+}
+
+
+
+
 /* Open Statement  -----------*/
 .open-statement {
    background-color: var(--orange-bg);
