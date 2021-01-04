@@ -219,7 +219,7 @@ header .flex {
 }
 .banner-about::before {
    content:'';
-   background-color: var(--banner-overlay);
+   background-color: var(--black-txt);
    height: 300px;
    width: 100%;
    position: absolute;
