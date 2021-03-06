@@ -1035,11 +1035,12 @@ footer .right-column .remote {
 }
 
 
-/* Reg-Forms ---- */
+/* Reg-Forms --------- */
 .reg-forms {
    padding: 80px 0;
-   background-color: #1e505a;
+   background-color: var(--blue-bg);
    color: var(--cream-txt);
+   display: none;
 }
 .reg-forms .contents {
    display: grid;
@@ -1076,17 +1077,22 @@ footer .right-column .remote {
 /* Client forms --*/
 .client-forms {
    background-color: var(--blue-bg);
+   padding: 100px 0;
 }
 
 /* New Client Form */
-
+.client-forms .new-client-form h2 {
+   color: var(--blue-bg-text);
+   margin-bottom: 40px;
+}
 
 
 /*form*/
-.client-forms .contents form {
+.client-forms .contents form .grid-2 {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-gap: 20px;
+   margin-bottom: 50px;
 }
 
 .client-forms .contents form .form-control input {
@@ -1098,7 +1104,13 @@ footer .right-column .remote {
    color: var(--cream-txt);
    font-size: 16px;
 }
-.client-forms .contents form .contact-message textarea {
+
+.client-insurance {
+   margin-bottom: 20px;
+}
+
+
+/* .client-forms .contents form .contact-message textarea {
    width: 100%;
    border: none;
    font-family: 'Fira Sans', sans-serif;
@@ -1106,7 +1118,7 @@ footer .right-column .remote {
    background-color: var(--form-input-bg);
    color: var(--cream-txt);
 }
-.client-forms .contents form .contact-message {
+.client-forms .contents form .client-message {
    grid-column: 1 / span 2;
 }
 .client-forms .contents form ::placeholder {
@@ -1116,29 +1128,8 @@ footer .right-column .remote {
 .client-forms .contents form .contact-message textarea {
    padding: 15px;
    border-radius: 3px;
-}
-.client-forms .contents form .submit {
-   grid-column: 1 / span 2;
-   text-align: center;
-   margin-top: 20px;
-}
-.client-forms .contents form .submit .form-btn {
-   border: 2px solid var(--blue-bg-text);
-   place-items: center;
-   padding: 15px 25px;
-   border-radius: 3px;
-   background-color: var(--blue-bg);
-   color: var(--blue-bg-text);
-   text-transform: uppercase;
-   font-weight: 600;
-   letter-spacing: .1em;
-}
-.client-forms .contents form .submit .form-btn:hover {
-   border: 2px solid var(--black-bg);
-   background-color: var(--black-bg);
-   color: var(--cream-bg);
-   font-weight: 700;
-}
+} */
+
 
 
 

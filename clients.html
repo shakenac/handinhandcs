@@ -135,45 +135,50 @@
 
 					<!-- form -->
 					<form>
-						<div class="form-control client-first-name">
-							<label for="fname">First Name *</label>
-							<input type="text" name="fname" required>
-						</div>
-						<div class="form-control client-last-name">
-							<label for="lname">Last Name *</label>
-							<input type="text" name="lname" required>
-						</div>
+						<!-- form-names -->
+						<div class="grid-2">
+							<div class="form-control client-first-name">
+								<label for="fname">First Name *</label>
+								<input type="text" name="fname" required>
+							</div>
+							<div class="form-control client-last-name">
+								<label for="lname">Last Name *</label>
+								<input type="text" name="lname" required>
+							</div>
+							<div class="form-control client-first-name">
+								<label for="fname">Parent/Guardian First Name (if applicable) *</label>
+								<input type="text" name="fname" required>
+							</div>
+							<div class="form-control client-last-name">
+								<label for="lname">Parent/Guardian Last Name *</label>
+								<input type="text" name="lname" required>
+							</div>
+							<div class="form-control client-dob">
+								<label for="dob">Date of Birth *</label>
+								<input type="date" name="dob" required>
+							</div>
 
-						<div class="form-control client-first-name">
-							<label for="fname">Parent/Guardian First Name (if applicable) *</label>
-							<input type="text" name="fname" required>
-						</div>
-						<div class="form-control client-last-name">
-							<label for="lname">Parent/Guardian Last Name *</label>
-							<input type="text" name="lname" required>
-						</div>
-
-						<div class="form-control client-dob">
-							<label for="dob">Date of Birth *</label>
-							<input type="date" name="dob" required>
-						</div>
-
-						<div class="form-control client-phone">
-							<input type="tel" name="phone" placeholder="Phone Number *" required>
+							<div class="form-control client-phone">
+								<label for="dob">Phone Number *</label>
+								<input type="tel" name="phone" required>
+							</div>
 						</div>
 
 						<div class="form-control client-insurance">
 							<label for="fname">Health Insurance *</label>
 							<input type="text" name="insurance" required>
 						</div>
-						<div class="form-control client-id-number">
-							<label for="fname">ID Number *</label>
-							<input type="text" name="id-num" required>
+						<div class="grid-2">
+							<div class="form-control client-id-number">
+								<label for="fname">ID Number *</label>
+								<input type="text" name="id-num" required>
+							</div>
+							<div class="form-control client-group-number">
+								<label for="fname">Group Number *</label>
+								<input type="text" name="group-num" required>
+							</div>
 						</div>
-						<div class="form-control client-group-number">
-							<label for="fname">Group Number *</label>
-							<input type="text" name="group-num" required>
-						</div>
+
 
 
 
@@ -181,8 +186,9 @@
 							<label for="lname">Email Name *</label>
 							<input type="email" name="email" placeholder="Email *" required>
 						</div>
-						<div class="form-control client-message">
-							<textarea name="message" rows="10" cols="10" placeholder="Message *" required></textarea>
+						<div class="form-control client-summary">
+							<label for="lname">Brief Summary of Concern</label>
+							<textarea name="summary" rows="10" cols="10"></textarea>
 						</div>
 
 
