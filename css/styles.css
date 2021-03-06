@@ -24,6 +24,8 @@
    /* --form-placeholder-txt: #307786; */
    --form-input-bg: #185663;
    --form-placeholder-txt: #3f91a2;
+   --reg-form-bg: #E4E4E4;
+   --reg-form-placeholder-txt: #AFAFAF;
 
    /*drop-shadow*/
    --shadow: 0px 0px 24px -7px rgba(0,0,0,0.3);
@@ -1101,8 +1103,8 @@ footer .right-column .remote {
    padding: 15px;
    border-radius: 3px;
    border: none;
-   background-color: var(--form-input-bg);
-   color: var(--cream-txt);
+   background-color: var(--reg-form-bg);
+   color: var(--reg-form-placeholder-txt);
    font-size: 16px;
 }
 
