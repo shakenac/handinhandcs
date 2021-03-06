@@ -1037,22 +1037,23 @@ footer .right-column .remote {
 
 /* Reg-Forms --------- */
 .reg-forms {
-   padding: 80px 0;
-   background-color: var(--blue-bg);
+   padding: 80px 0 20px;
+   background-color: #fff;
    color: var(--cream-txt);
-   display: none;
 }
 .reg-forms .contents {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-column-gap: 20px;
+   display: none; /*hidden until mobile*/
+
 }
-.reg-forms h2 {
+/* .reg-forms h2 {
    margin-bottom: 40px;
    color: var(--blue-bg-text);
-}
+} */
 .reg-forms h3 {
-   color: var(--blue-bg-text);
+   color: var(--main-txt);
 }
 .reg-forms .contents .btn .btn-reg {
    display: block;
@@ -1076,13 +1077,13 @@ footer .right-column .remote {
 
 /* Client forms --*/
 .client-forms {
-   background-color: var(--blue-bg);
-   padding: 100px 0;
+   background-color: #fff;
+   /* padding: 100px 0; */
 }
 
 /* New Client Form */
-.client-forms .new-client-form h2 {
-   color: var(--blue-bg-text);
+.client-forms h2 {
+   color: var(--blue-text);
    margin-bottom: 40px;
 }
 
