@@ -125,84 +125,138 @@
    </section>
 
 
-   <!-- Reg Form Buttons -->
+   <!-- Reg Forms -->
    <section class="client-forms">
 		<div class="container">
 			<div class="contents">
 				<div class="grid-2">
 
-			      <!-- New Client Form -->
-			      <div class="new-client-form">
+					<!-- New Client Form -->
+					<div class="new-client-form">
 						<h2>New Client Form</h2>
-
 						<!-- form -->
 						<form>
-							<!-- form-names -->
-							<div class="form-control client-first-name">
-								<label for="fname">First Name *</label>
-								<input type="text" name="fname" required>
+							<div class="form-group">
+								<div class="form-control client-first-name">
+	                        <label for="fname">Clients Name *</label>
+	                        <input type="text" name="fname" placeholder="First Name" required>
+	                     </div>
+	                     <div class="form-control client-last-name">
+	                        <!-- <label for="lname">Last Name *</label> -->
+	                        <input type="text" name="lname" placeholder="Last Name" required>
+	                     </div>
 							</div>
-							<div class="form-control client-last-name">
-								<label for="lname">Last Name *</label>
-								<input type="text" name="lname" required>
+							<div class="form-group">
+								<div class="form-control client-first-name">
+	                        <label for="fname">Parent/Guardian First Name (if applicable)</label>
+	                        <input type="text" name="fname" placeholder="First Name">
+	                     </div>
+	                     <div class="form-control client-last-name">
+	                        <input type="text" name="lname" placeholder="Last Name" required>
+	                     </div>
 							</div>
-							<div class="form-control client-first-name">
-								<label for="fname">Parent/Guardian First Name (if applicable) *</label>
-								<input type="text" name="fname" required>
+							<div class="form-control client-dob">
+	                     <label for="dob">Date of Birth *</label>
+	                     <input type="date" name="dob" required>
+	                  </div>
+							<div class="form-control client-phone">
+	                     <label for="dob">Phone Number *</label>
+	                     <input type="tel" name="phone" required>
+	                  </div>
+							<div class="form-group">
+								<div class="form-control client-insurance">
+	                        <label for="fname">Health Insurance *</label>
+	                        <input type="text" name="insurance" placeholder="Health Insurance" required>
+	                     </div>
+	                        <div class="form-control client-id-number">
+	                           <input type="text" name="id-num" placeholder="ID Number" required>
+	                        </div>
+	                        <div class="form-control client-group-number">
+	                           <input type="text" name="group-num" placeholder="Group Number" required>
+
+	                     </div>
 							</div>
-							<div class="form-control client-last-name">
-								<label for="lname">Parent/Guardian Last Name *</label>
-								<input type="text" name="lname" required>
+							<div class="form-control client-email">
+	                     <label for="lname">Email Address *</label>
+	                     <input type="email" name="email" required>
+	                  </div>
+							<div class="form-control client-summary">
+							  <label for="lname">Brief Summary of Concern</label>
+							  <textarea name="summary" rows="6" cols="10"></textarea>
+							</div>
+							<div class="submit">
+                       <input type="submit" class="form-btn" value="submit">
+							</div>
+						</form>
+					</div><!--new-client-form-->
+
+
+					<!-- Third Party Form -->
+					<div class="third-party-form">
+						<h2>Third Party Referral Form</h2>
+						<!-- form -->
+						<form>
+							<div class="form-group">
+								<div class="form-control client-first-name">
+	                        <label for="fname">Clients Name *</label>
+	                        <input type="text" name="fname" placeholder="First Name" required>
+	                     </div>
+	                     <div class="form-control client-last-name">
+	                        <input type="text" name="lname" placeholder="Last Name" required>
+	                     </div>
 							</div>
 							<div class="form-control client-dob">
 								<label for="dob">Date of Birth *</label>
 								<input type="date" name="dob" required>
 							</div>
+							<div class="form-group">
+								<div class="form-control client-first-name">
+	                        <label for="fname">Parent/Guardian *</label>
+	                        <input type="text" name="fname" placeholder="First Name" required>
+	                     </div>
+	                     <div class="form-control client-last-name">
+	                        <input type="text" name="lname" placeholder="Last Name" required>
+	                     </div>
+							</div>
 
 							<div class="form-control client-phone">
-								<label for="dob">Phone Number *</label>
-								<input type="tel" name="phone" required>
+	                     <label for="dob">Phone Number *</label>
+	                     <input type="tel" name="phone" required>
+	                  </div>
+							<div class="form-group">
+								<div class="form-control client-insurance">
+	                        <label for="fname">Health Insurance *</label>
+	                        <input type="text" name="insurance" placeholder="Health Insurance" required>
+	                     </div>
+	                        <div class="form-control client-id-number">
+	                           <input type="text" name="id-num" placeholder="ID Number" required>
+	                        </div>
+	                        <div class="form-control client-group-number">
+	                           <input type="text" name="group-num" placeholder="Group Number" required>
+
+	                     </div>
 							</div>
-
-							<div class="form-control client-insurance">
-								<label for="fname">Health Insurance *</label>
-								<input type="text" name="insurance" required>
-							</div>
-							<div class="grid-2">
-								<div class="form-control client-id-number">
-									<label for="fname">ID Number *</label>
-									<input type="text" name="id-num" required>
-								</div>
-								<div class="form-control client-group-number">
-									<label for="fname">Group Number *</label>
-									<input type="text" name="group-num" required>
-								</div>
-							</div>
-
-
-
-
 							<div class="form-control client-email">
-								<label for="lname">Email Name *</label>
-								<input type="email" name="email" placeholder="Email *" required>
+	                     <label for="dod">Date of Discharge (if applicable)</label>
+	                     <input type="text" name="dod">
+	                  </div>
+							<div class="form-control client-email">
+	                     <label for="lname">Email Address *</label>
+	                     <input type="email" name="email" required>
+	                  </div>
+							<div class="form-control company-title">
+								<label for="company">Company/Title *</label>
+								<input type="text" name="company" required>
 							</div>
-							<div class="form-control client-summary">
-								<label for="lname">Brief Summary of Concern</label>
-								<textarea name="summary" rows="10" cols="10"></textarea>
-							</div>
-
-
 							<div class="submit">
-								<input type="submit" class="form-btn" value="submit">
+                       <input type="submit" class="form-btn" value="submit">
 							</div>
 						</form>
-			      </div>
+					</div><!--third-party-form-->
 
-			      <!-- Third Party Form -->
-			      <div class="third-party-form"></div>
-				</div><!--.grid-2-->
+				</div><!-- grid-2-->
 			</div><!-- contents -->
-		</div>
+		</div><!-- container -->
    </section>
 
 

@@ -24,8 +24,9 @@
    /* --form-placeholder-txt: #307786; */
    --form-input-bg: #185663;
    --form-placeholder-txt: #3f91a2;
-   --reg-form-bg: #E4E4E4;
-   --reg-form-placeholder-txt: #AFAFAF;
+   --reg-form-bg: #f1f1f1;
+   --reg-form-placeholder-txt: #8e8e8e;
+   --reg-form-inpt-txt: #808080;
 
    /*drop-shadow*/
    --shadow: 0px 0px 24px -7px rgba(0,0,0,0.3);
@@ -1086,7 +1087,7 @@ footer .right-column .remote {
 /* New Client Form */
 .client-forms h2 {
    color: var(--blue-text);
-   margin-bottom: 40px;
+   margin-bottom: 20px;
 }
 
 
@@ -1094,55 +1095,86 @@ footer .right-column .remote {
 .client-forms .contents .grid-2 {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   grid-gap: 50px;
+   grid-column-gap: 80px;
    margin-bottom: 50px;
 }
+.client-forms .contents form .form-control {
+   padding: 12px 0;
+}
+.client-forms .contents form .form-group {
+   padding: 5px 0;
+}
+.client-forms .grid-2 .form-group .form-control {
+   padding: 8px 0;
+}
+.client-forms label {
+   font-family: 'Fira Sans', sans-serif;
+   font-size: 15px;
+   color: var(--main-txt);
+   display: inline-block;
+   margin-bottom: 13px;
+}
 
-.client-forms .contents form .form-control input {
+.client-forms textarea {
+   font-family: 'Fira Sans', sans-serif;
+   color: var(--reg-form-inpt-txt);
+   width: 100%;
+   padding: 15px;
+   border-radius: 3px;
+   border: none;
+   background-color: var(--reg-form-bg);
+   font-size: 15px;
+
+}
+.client-forms .contents form input {
    width: 100%;
    padding: 15px;
    border-radius: 3px;
    border: none;
    background-color: var(--reg-form-bg);
    color: var(--reg-form-placeholder-txt);
-   font-size: 16px;
-}
-
-.client-insurance {
-   margin-bottom: 20px;
-}
-
-
-/* .client-forms .contents form .contact-message textarea {
-   width: 100%;
-   border: none;
-   font-family: 'Fira Sans', sans-serif;
-   font-size: 16px;
-   background-color: var(--form-input-bg);
-   color: var(--cream-txt);
-}
-.client-forms .contents form .client-message {
-   grid-column: 1 / span 2;
+   font-size: 15px;
 }
 .client-forms .contents form ::placeholder {
-   font-family: 'Fira Sans', sans-serif;
-   color: var(--form-placeholder-txt);
+   color: var(--reg-form-inpt-txt);
 }
-.client-forms .contents form .contact-message textarea {
-   padding: 15px;
+.client-forms .contents form .client-dob input {
+   font-family: 'Fira Sans', sans-serif;
+}
+
+.client-forms form .submit .form-btn {
+   padding: 6px 0;
+}
+
+.client-forms form .submit .form-btn {
+   display: inline-block;
+   /* font-family: 'Raleway', sans-serif; */
+   font-family: 'Fira Sans', sans-serif;
+   font-weight: 500;
+   /* font-size: 13px; */
+   letter-spacing: .07em;
+   text-transform: uppercase;
+   transition: background .2s ease-in-out;
+   padding: 15px 25px;
    border-radius: 3px;
-} */
+   color: var(--main-txt);
+   background-color: #fff;
+   border: solid var(--main-txt) 2px;
+   cursor: pointer;
+   margin: 10px 0;
+   width: 140px;
+}
 
-
-
-
-
-/* Thrid Pary Form ---- */
-
-
-
-
-
+.client-forms form .submit .form-btn:hover {
+   font-weight: 600;
+   border-radius: 3px;
+   color: var(--cream-txt);
+   background-color: var(--black-txt);
+   border: solid var(--black-txt) 2px;
+   cursor: pointer;
+   margin: 10px 0;
+   width: 140px;
+}
 
 
 
@@ -1220,6 +1252,33 @@ footer .right-column .remote {
    }
 }
 
+@media screen and (max-width: 915px) {
+
+   .reg-forms .contents {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 20px;
+   }
+   .reg-forms .contents .btn {
+      margin-bottom: 10px;
+   }
+   .reg-forms .contents .btn a:hover {
+      color: var(--cream-txt);
+      border: 2px solid var(--black-txt);
+   }
+   .reg-forms .contents .btn a {
+      color: var(--black-txt);
+      border: 2px solid var(--black-txt);
+   }
+
+
+
+   .client-forms .contents .grid-2 {
+      grid-template-columns: 1fr;
+      grid-row-gap: 70px;
+   }
+
+}
 
 /* Tablet */
 @media screen and (max-width: 768px) {
