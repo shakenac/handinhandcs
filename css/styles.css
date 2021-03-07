@@ -1205,6 +1205,7 @@ footer .right-column .remote {
    .banner-btn {
       margin-top: 55px;
       display: flex;
+      justify-content: center;
    }
    .banner-btn a {
       padding: 15px 20px;
@@ -1219,6 +1220,9 @@ footer .right-column .remote {
       color: var(--cream-txt);
       border: 2px solid #1d1d1d;
       transition: background .3s ease-in-out;
+   }
+   .banner .banner-btn {
+      margin-top: 40px;
    }
 
    /* ABOUT PAGE ------------- */
@@ -1295,8 +1299,7 @@ footer .right-column .remote {
 
 }
 
-/* Tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
    header .flex {
       justify-content: flex-end;
    }
@@ -1358,6 +1361,11 @@ footer .right-column .remote {
 
    /* JavaScript Menu Toggle */
    /* .active */
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+
 
    /* opening statement */
    .open-statement {
@@ -1521,16 +1529,17 @@ footer .right-column .remote {
 
    /* Banner */
    .banner {
-      height: 350px;
+      height: 380px;
    }
    .banner::before {
-      height: 350px;
+      height: 380px;
    }
    .banner .banner-inner .indent {
       padding-left: 0;
    }
    .banner .banner-inner h1 {
       font-size: 20px;
+      padding-top: 2px;
    }
 
    /* Inner */
