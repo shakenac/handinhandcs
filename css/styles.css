@@ -18,7 +18,8 @@
    --cream-bg: #f8f7f2;
    --black-bg: #3c3c3c;
    --orange-bg: #d99a45;
-   --banner-overlay: #285058;
+   --banner-overlay: #355156;
+   /* --banner-overlay: #285058 */
 
    /*form*/
    /* --form-placeholder-txt: #307786; */
@@ -247,6 +248,9 @@ header .flex {
 .banner-about .banner-inner .banner-btn {
    justify-content: center;
 }
+.banner-about h1 {
+   font-size: 32px;
+}
 
 /* Services Page Banner */
 .banner-services {
@@ -258,7 +262,7 @@ header .flex {
 }
 .banner-services::before {
    content:'';
-   background-color: var(--black-txt);
+   background-color: #252e31de;
    height: 500px;
    width: 100%;
    position: absolute;
@@ -278,7 +282,7 @@ header .flex {
 }
 .banner-services .banner-inner h1 {
    /* font-family: 'Segoe Script Bold', sans-serif; */
-   font-size: 27px;
+   font-size: 32px;
 }
 
 
@@ -312,7 +316,7 @@ header .flex {
 }
 .banner-clients .banner-inner h1 {
    /* font-family: 'Segoe Script Bold', sans-serif; */
-   font-size: 27px;
+   font-size: 32px;
 }
 
 
