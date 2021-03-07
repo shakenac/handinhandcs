@@ -1307,6 +1307,9 @@ footer .right-column .remote {
    header .flex {
       justify-content: flex-end;
    }
+   header .container {
+      padding: 0 20px;
+   }
 
    /* mobile menu */
    .navbar {
