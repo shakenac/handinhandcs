@@ -43,7 +43,7 @@
    max-width: 1200px;
    margin: 0 auto;
    overflow: hidden;
-   padding: 0 30px;
+   padding: 0 50px;
 }
 .flex {
    display: flex;
@@ -181,12 +181,12 @@ header .flex {
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
-   height: 450px;
+   height: 750px;
 }
 .banner::before {
    content:'';
    background-color: var(--banner-overlay);
-   height: 450px;
+   height: 750px;
    width: 100%;
    position: absolute;
    left: 0;
@@ -194,16 +194,23 @@ header .flex {
    z-index: 1;
 }
 
+.banner .flex {
+   justify-content: center;
+}
+
 .banner-inner {
-   max-width: 400px;
+   max-width: 450px;
    z-index: 5;
 }
 .banner-inner h1 {
    letter-spacing: .05em;
+   padding-bottom: 3px;
+   font-size: 27px;
+   text-align: center;
 }
-.banner-inner .indent {
+/* .banner-inner .indent {
    padding-left: 20px;
-}
+} */
 
 /* banner button */
 .banner-btn {
@@ -218,12 +225,12 @@ header .flex {
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
-   height: 300px;
+   height: 500px;
 }
 .banner-about::before {
    content:'';
    background-color: var(--black-txt);
-   height: 300px;
+   height: 500px;
    width: 100%;
    position: absolute;
    left: 0;
@@ -247,12 +254,12 @@ header .flex {
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
-   height: 300px;
+   height: 500px;
 }
 .banner-services::before {
    content:'';
    background-color: var(--black-txt);
-   height: 300px;
+   height: 500px;
    width: 100%;
    position: absolute;
    left: 0;
@@ -281,12 +288,12 @@ header .flex {
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
-   height: 300px;
+   height: 500px;
 }
 .banner-clients::before {
    content:'';
    background-color: var(--black-txt);
-   height: 300px;
+   height: 500px;
    width: 100%;
    position: absolute;
    left: 0;
@@ -753,7 +760,7 @@ footer .right-column .remote {
 .qualifications  .content {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   grid-gap: 20px;
+   grid-gap: 70px;
 }
 
 .qualifications h2 {
@@ -1084,6 +1091,14 @@ footer .right-column .remote {
    /* padding: 100px 0; */
 }
 
+.client-forms .new-client-form:hover::before {
+   content:'';
+   background: #f7f7f7;
+}
+/* .client-forms .new-client-form:hover {
+   background: #f7f7f7;
+} */
+
 /* New Client Form */
 .client-forms h2 {
    color: var(--blue-text);
@@ -1192,10 +1207,12 @@ footer .right-column .remote {
       display: flex;
    }
    .banner-btn a {
-      padding: 10px 20px;
+      padding: 15px 20px;
       border: 2px solid var(--cream-txt);
       border-radius: 3px;
       color: var(--cream-txt);
+      font-weight: 500;
+      letter-spacing: 0.07em;
    }
    .banner-btn a:hover {
       background-color: #1d1d1d;
@@ -1270,8 +1287,6 @@ footer .right-column .remote {
       color: var(--black-txt);
       border: 2px solid var(--black-txt);
    }
-
-
 
    .client-forms .contents .grid-2 {
       grid-template-columns: 1fr;
@@ -1492,6 +1507,11 @@ footer .right-column .remote {
    .payments .contents {
       grid-template-columns: 1fr;
       grid-row-gap: 40px;
+   }
+   .reg-forms .contents {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 10px;
    }
 
 }
