@@ -1,0 +1,7 @@
+nav .mobile-nav {
+   display: flex;
+   flex-direction: column;
+   background-color: var(--blue-bg);
+   height: 100vh;
+   width: 100%;
+}
