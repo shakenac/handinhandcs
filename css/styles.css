@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "fonts.css";
+@import "mobile-nav.css";
 
 /* Color pallete ---------------------------------- */
 :root {
@@ -1368,6 +1369,13 @@ footer .right-column .remote {
 
    /* JavaScript Menu Toggle */
    /* .active */
+
+   .banner {
+      height: 530px;
+   }
+   .banner::before {
+      height: 530px;
+   }
 }
 
 /* Tablet */
