@@ -1387,10 +1387,10 @@ footer .right-column .remote {
       height: 100vh;
       outline: 0px;
       background-color: #fff;
-      z-index: 9;
-      transform: translateX(0vw);
+      z-index: 20;
+      /* transform: translateX(0vw); */
       visibility: visible;
-      transition: var(--transition);
+      /* transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1); */
    }
 
    .mobile-nav-overlay nav {
@@ -1405,7 +1405,7 @@ footer .right-column .remote {
    }
    .mobile-nav-overlay .mobile-nav-icon-open {
       position: absolute;
-      top: 15px;
+      top: 25px;
       right: 25px;
    }
    .mobile-nav-overlay ul {
@@ -1425,7 +1425,7 @@ footer .right-column .remote {
       font-weight: 700;
    }
    .mobile-nav-overlay .nav-btn {
-      margin-top: 40px;
+      margin-top: 50px;
    }
    .mobile-nav-overlay .nav-btn a {
       padding: 20px 35px;
