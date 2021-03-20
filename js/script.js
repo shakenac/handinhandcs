@@ -1,5 +1,5 @@
 const mobileIcon = document.getElementsByClassName('mobile-nav-icon')[0];
-const mobileNavOverlay = document.getElementsByClassName('mobile-nav-overlay')[0];
+const mobileNav = document.getElementsByClassName('mobile-nav-overlay')[0];
 
 /*
    MOBILE NAVIGATION TOGGLE:
@@ -20,8 +20,15 @@ const mobileNavOverlay = document.getElementsByClassName('mobile-nav-overlay')[0
 // Arrow rotates when clicked
 mobileIcon.addEventListener('click', () => {
    mobileIcon.classList.toggle('change');
+   //add active class to mobileNav
+   mobileNav.classList.add('active');
 })
 
+// When arrow is clicked
+   // Add .active class to mobileNav
+
+   // if .active is on mobileNav AND the mobileIcon is clicked:
+      //close mobileNav
 
 
 
