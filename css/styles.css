@@ -1344,6 +1344,9 @@ footer .right-column .remote {
 
 
    /* OPEN MOBILE NAV MENU */
+   .mobile-nav-overlay {
+      display: none;
+   }
 
    .navbar .mobile-nav-icon-open {
       position: absolute;
@@ -1352,9 +1355,7 @@ footer .right-column .remote {
       right: 20px;
    }
 
-   .mobile-nav-overlay {
-      display: none;
-   }
+
    .mobile-nav-overlay .mobile-nav-icon-open {
       width: 20px;
    }
@@ -1372,7 +1373,8 @@ footer .right-column .remote {
       stroke-miterlimit: 10;
    }
 
-   .mobile-nav-overlay {
+   /* Javascript mobile nav toggle */
+   .mobile-nav-overlay.active {
       display: flex;
       flex-direction: column;
       -webkit-box-pack: center;
@@ -1452,11 +1454,7 @@ footer .right-column .remote {
    }
 
 
-   /* Javascript mobile nav toggle */
 
-   .mobile-nav-overlay.active {
-
-   }
 
 
 }
