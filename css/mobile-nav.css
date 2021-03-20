@@ -1,13 +1,13 @@
 /* Mobile Nav Menu */
 .mobile-nav-overlay .mobile-nav-icon .st0 {
    fill: none;
-   stroke: var(--cream-txt);
+   stroke: var(--main-txt);
    stroke-miterlimit: 10;
 }
 
 .mobile-nav-overlay .mobile-nav-icon .st1 {
    fill: none;
-   stroke: var(--cream-txt);
+   stroke: var(--main-txt);
    stroke-width: 14;
    stroke-linecap: round;
    stroke-miterlimit: 10;
