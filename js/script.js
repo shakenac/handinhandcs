@@ -21,7 +21,7 @@ const mobileNav = document.getElementsByClassName('mobile-nav-overlay')[0];
 mobileIcon.addEventListener('click', () => {
    mobileIcon.classList.toggle('change');
    //add active class to mobileNav
-   mobileNav.classList.add('active');
+   mobileNav.classList.toggle('active');
 })
 
 // When arrow is clicked
