@@ -19,7 +19,7 @@ const mobileNavOverlay = document.getElementsByClassName('mobile-nav-overlay')[0
 
 // Arrow rotates when clicked
 mobileIcon.addEventListener('click', () => {
-   mobileIcon.classList.add('change');
+   mobileIcon.classList.toggle('change');
 })
 
 
