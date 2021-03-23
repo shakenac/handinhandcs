@@ -123,7 +123,21 @@ p {
    color: var(--cream-txt);
    transition: background .2s ease-in-out;
 }
-.btn-blue {
+.moreaboutme-btn {
+   padding: 15px 20px;
+   border: 2px solid var(--black-bg);
+   border-radius: 3px;
+   color: var(--black-bg);
+   font-weight: 600;
+   letter-spacing: .06em;
+}
+.moreaboutme-btn:hover {
+   background-color: var(--black-bg);
+   color: var(--cream-txt);
+   transition: background .3s ease-in-out;
+}
+
+/* .btn-blue {
    padding: 10px 20px;
    border: 2px solid var(--blue-bg);
    border-radius: 3px;
@@ -136,7 +150,7 @@ p {
    border: 2px solid var(--black-bg);
    color: var(--cream-txt);
    transition: background .2s ease-in-out;
-}
+} */
 
 
 
