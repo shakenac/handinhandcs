@@ -143,6 +143,7 @@ p {
 /* Header  --------------*/
 header {
    background-color: #fff;
+   height: 80px;
    /* z-index: 5; */
 }
 header .flex {
@@ -168,7 +169,7 @@ header .flex {
    transition: background .2s ease-in-out;
 }
 .navbar .nav-btn a {
-   padding: 10px 20px;
+   padding: 15px 20px;
    border: 2px solid var(--black-bg);
    border-radius: 3px;
    color: var(--black-bg);
@@ -1243,7 +1244,7 @@ footer .right-column .remote {
       justify-content: center;
    }
    .banner-btn a {
-      padding: 15px 20px;
+      padding: 18px 20px;
       border: 2px solid var(--cream-txt);
       border-radius: 3px;
       color: var(--cream-txt);
