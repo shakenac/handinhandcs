@@ -1238,6 +1238,34 @@ footer .right-column .remote {
       margin-top: 40px;
    }
 
+
+   /* Banner heights */
+   .banner {
+      height: 500px;
+   }
+   .banner::before {
+      height: 500px;
+   }
+   .banner-about {
+      height: 500px;
+   }
+   .banner-about::before {
+      height: 500px;
+   }
+   .banner-services {
+      height: 500px;
+   }
+   .banner-services::before {
+      height: 500px;
+   }
+   .banner-clients {
+      height: 500px;
+   }
+   .banner-clients::before {
+      height: 500px;
+   }
+
+
    /* ABOUT PAGE ------------- */
    .about-info .contents .column-2 {
       width: 100%;
