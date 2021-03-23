@@ -246,7 +246,7 @@ header .flex {
 
 /* About Me Page Banner */
 .banner-about {
-   background-image: url(../images/olivier-piquer-PV26u-tR3fw-unsplash_flip.jpg);
+   background-image: url(../images/living-room-2155353.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
@@ -259,7 +259,7 @@ header .flex {
    width: 100%;
    position: absolute;
    left: 0;
-   opacity: 0.6;
+   opacity: 0.8;
    z-index: 1;
 }
 .banner-about .banner-inner .banner-name {
