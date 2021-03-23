@@ -125,14 +125,14 @@ p {
 }
 .moreaboutme-btn {
    padding: 15px 20px;
-   border: 2px solid var(--black-bg);
+   border: 2px solid var(--black-txt);
    border-radius: 3px;
-   color: var(--black-bg);
+   color: var(--black-txt);
    font-weight: 600;
    letter-spacing: .06em;
 }
 .moreaboutme-btn:hover {
-   background-color: var(--black-bg);
+   background-color: var(--black-txt);
    color: var(--cream-txt);
    transition: background .3s ease-in-out;
 }
