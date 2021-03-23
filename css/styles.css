@@ -928,7 +928,7 @@ footer .right-column .remote {
 }
 .cost-affiliates .fees .payment .payment-list .column-1,
 .cost-affiliates .fees .payment .payment-list .column-2 {
-   max-width: 48%;
+   max-width: 78%;
 }
 
 
@@ -1039,7 +1039,7 @@ footer .right-column .remote {
    margin-top: 20px;
 }
 .payments .contents .column-2 .paypal form .submit input {
-   padding: 12px 25px;
+   padding: 15px 25px;
    background-color: var(--cream-bg);
    border-radius: 3px;
    border: 2px solid var(--main-txt);
@@ -1792,6 +1792,7 @@ footer .right-column .remote {
    /* qualifications */
    .qualifications .content {
       grid-template-columns: 1fr;
+      grid-gap: 30px;
    }
 
    /* COST ---------*/
