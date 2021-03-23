@@ -947,7 +947,7 @@ footer .right-column .remote {
 /* ACE Education Section ---- */
 
 .workshops {
-   padding: 100px 0;
+   padding: 100px 0 30px 0;
    color: var(--main-txt);
 }
 .workshops .container {
@@ -984,6 +984,28 @@ footer .right-column .remote {
    font-size: 8px;
    position: relative;
    top: 7px;
+}
+
+
+.workshops-contact-btn {
+   padding: 20px 50px 80px 20px;
+}
+.workshops-contact-btn .container {
+   max-width: 820px;
+   padding: 20px 50px;
+}
+.workshops-contact-btn a {
+   padding: 15px 20px;
+   border: 2px solid var(--black-bg);
+   border-radius: 3px;
+   color: var(--black-bg);
+   font-weight: 600;
+   letter-spacing: .06em;
+}
+.workshops-contact-btn a:hover {
+   background-color: var(--black-bg);
+   color: var(--cream-txt);
+   transition: background .3s ease-in-out;
 }
 
 
