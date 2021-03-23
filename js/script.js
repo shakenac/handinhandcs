@@ -1,12 +1,13 @@
-const mobileIcon = document.getElementsByClassName('mobile-nav-icon')[0];
+// const mobileIcon = document.getElementsByClassName('mobile-nav-icon')[0];
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const mobileNav = document.getElementsByClassName('mobile-nav-overlay')[0];
 const webBody = document.getElementsByTagName('BODY')[0];
 const navScheduleBtn = document.getElementsByClassName('mobile-nav-btn')[0];
 
 
 // Arrow rotates when clicked
-mobileIcon.addEventListener('click', () => {
-   mobileIcon.classList.toggle('change');
+toggleButton.addEventListener('click', () => {
+   toggleButton.classList.toggle('change');
    //add active class to mobileNav
    mobileNav.classList.toggle('active');
    webBody.classList.toggle('active');
@@ -19,7 +20,7 @@ ADD javascript function to "Schedule a Session button in mobile nav"
 
 navScheduleBtn.addEventListener('click', () => {
    mobileNav.classList.remove('active');
-   mobileIcon.classList.remove('change');
+   toggleButton.classList.remove('change');
    webBody.classList.remove('active');
 })
 
